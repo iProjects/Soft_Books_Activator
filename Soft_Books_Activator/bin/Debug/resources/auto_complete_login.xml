@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Systems>
+  <System system="Soft Books Sacco" serverName="KMK\SQLEXPRESS" databaseName="SBSaccoDB" userName="sa" password="D61GEfjyCSs7HfnVx6hIOQ==" IntegratedSecurity="True" remember="True" />
+  <System system="Soft Books Payroll" serverName="KMK\SQLEXPRESS" databaseName="junedb" userName="sa" password="D61GEfjyCSs7HfnVx6hIOQ==" IntegratedSecurity="True" remember="True" />
+  <System system="Soft Books Payroll" serverName="KMK\SQLEXPRESS" databaseName="SBPayrollDB_february_2023" userName="sa" password="D61GEfjyCSs7HfnVx6hIOQ==" IntegratedSecurity="True" remember="True" />
+  <System system="Soft Books Sacco" serverName="KMK\SQLEXPRESS" databaseName="SBSaccoDB_february_2023" userName="sa" password="D61GEfjyCSs7HfnVx6hIOQ==" IntegratedSecurity="True" remember="True" />
+  <System system="Soft Books School" serverName="KMK\SQLEXPRESS" databaseName="SBSchoolDB_february_2023" userName="sa" password="D61GEfjyCSs7HfnVx6hIOQ==" IntegratedSecurity="True" remember="True" />
+</Systems>

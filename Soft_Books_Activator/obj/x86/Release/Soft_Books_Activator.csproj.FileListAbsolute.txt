@@ -1,0 +1,9 @@
+D:\wakxpx\csharp\visualstudio\2010\Soft_Books_Activator\Soft_Books_Activator\bin\Release\Soft_Books_Activator.exe.config
+D:\wakxpx\csharp\visualstudio\2010\Soft_Books_Activator\Soft_Books_Activator\bin\Release\Soft_Books_Activator.exe
+D:\wakxpx\csharp\visualstudio\2010\Soft_Books_Activator\Soft_Books_Activator\bin\Release\Soft_Books_Activator.pdb
+D:\wakxpx\csharp\visualstudio\2010\Soft_Books_Activator\Soft_Books_Activator\obj\x86\Release\Soft_Books_Activator.main_form.resources
+D:\wakxpx\csharp\visualstudio\2010\Soft_Books_Activator\Soft_Books_Activator\obj\x86\Release\Soft_Books_Activator.Properties.Resources.resources
+D:\wakxpx\csharp\visualstudio\2010\Soft_Books_Activator\Soft_Books_Activator\obj\x86\Release\Soft_Books_Activator.csproj.GenerateResource.Cache
+D:\wakxpx\csharp\visualstudio\2010\Soft_Books_Activator\Soft_Books_Activator\obj\x86\Release\Soft_Books_Activator.exe
+D:\wakxpx\csharp\visualstudio\2010\Soft_Books_Activator\Soft_Books_Activator\obj\x86\Release\Soft_Books_Activator.pdb
+D:\wakxpx\csharp\visualstudio\2010\Soft_Books_Activator\Soft_Books_Activator\obj\x86\Release\Soft_Books_Activator.SplashScreen.resources

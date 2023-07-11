@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Systems>
+  <System systems_paths="C:\Program Files (x86)\Software Providers\Soft Books Payroll" sys="Soft Books Payroll" />
+  <System systems_paths="C:\Program Files (x86)\Software Providers\Soft Books Sacco" sys="Soft Books Sacco" />
+  <System systems_paths="C:\Program Files (x86)\Software Providers\Soft Books School" sys="Soft Books School" />
+</Systems>

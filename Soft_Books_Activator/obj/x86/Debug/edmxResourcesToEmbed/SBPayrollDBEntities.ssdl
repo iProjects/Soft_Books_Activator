@@ -1,0 +1,1443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SBPayrollDBEntitiesModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="SBPayrollDBEntitiesModelStoreContainer">
+    <EntitySet Name="Accounts" EntityType="SBPayrollDBEntitiesModel.Store.Accounts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BankBranch" EntityType="SBPayrollDBEntitiesModel.Store.BankBranch" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Banks" EntityType="SBPayrollDBEntitiesModel.Store.Banks" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Benefits" EntityType="SBPayrollDBEntitiesModel.Store.Benefits" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DeductionsTracker" EntityType="SBPayrollDBEntitiesModel.Store.DeductionsTracker" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Departments" EntityType="SBPayrollDBEntitiesModel.Store.Departments" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Employee_Ext" EntityType="SBPayrollDBEntitiesModel.Store.Employee_Ext" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Employee_Ext_Fields" EntityType="SBPayrollDBEntitiesModel.Store.Employee_Ext_Fields" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Employees" EntityType="SBPayrollDBEntitiesModel.Store.Employees" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EmployeesBankTransfers" EntityType="SBPayrollDBEntitiesModel.Store.EmployeesBankTransfers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EmployeeTransactions" EntityType="SBPayrollDBEntitiesModel.Store.EmployeeTransactions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EmployerBanks" EntityType="SBPayrollDBEntitiesModel.Store.EmployerBanks" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Employers" EntityType="SBPayrollDBEntitiesModel.Store.Employers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EmpNonCashBenefits" EntityType="SBPayrollDBEntitiesModel.Store.EmpNonCashBenefits" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HourlyPayment" EntityType="SBPayrollDBEntitiesModel.Store.HourlyPayment" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LeaveTransactions" EntityType="SBPayrollDBEntitiesModel.Store.LeaveTransactions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NHIFRates" EntityType="SBPayrollDBEntitiesModel.Store.NHIFRates" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PackedTransactions" EntityType="SBPayrollDBEntitiesModel.Store.PackedTransactions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PayeeRates" EntityType="SBPayrollDBEntitiesModel.Store.PayeeRates" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PayrollItems" EntityType="SBPayrollDBEntitiesModel.Store.PayrollItems" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PayrollItemType" EntityType="SBPayrollDBEntitiesModel.Store.PayrollItemType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Payrolls" EntityType="SBPayrollDBEntitiesModel.Store.Payrolls" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PayrollTypes" EntityType="SBPayrollDBEntitiesModel.Store.PayrollTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PayslipDet" EntityType="SBPayrollDBEntitiesModel.Store.PayslipDet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PayslipDet_Temp" EntityType="SBPayrollDBEntitiesModel.Store.PayslipDet_Temp" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PayslipMaster" EntityType="SBPayrollDBEntitiesModel.Store.PayslipMaster" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PayslipMaster_Temp" EntityType="SBPayrollDBEntitiesModel.Store.PayslipMaster_Temp" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Settings" EntityType="SBPayrollDBEntitiesModel.Store.Settings" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SettingsGroup" EntityType="SBPayrollDBEntitiesModel.Store.SettingsGroup" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="spAllowedReportsRolesMenus" EntityType="SBPayrollDBEntitiesModel.Store.spAllowedReportsRolesMenus" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="spAllowedRoleMenus" EntityType="SBPayrollDBEntitiesModel.Store.spAllowedRoleMenus" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="spAllowedRoleMenusweb" EntityType="SBPayrollDBEntitiesModel.Store.spAllowedRoleMenusweb" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="spMenuItems" EntityType="SBPayrollDBEntitiesModel.Store.spMenuItems" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="spMenus" EntityType="SBPayrollDBEntitiesModel.Store.spMenus" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="spReportsMenuItems" EntityType="SBPayrollDBEntitiesModel.Store.spReportsMenuItems" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="spRoles" EntityType="SBPayrollDBEntitiesModel.Store.spRoles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="spUsers" EntityType="SBPayrollDBEntitiesModel.Store.spUsers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="spUsersInRoles" EntityType="SBPayrollDBEntitiesModel.Store.spUsersInRoles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="SBPayrollDBEntitiesModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TaxTracking" EntityType="SBPayrollDBEntitiesModel.Store.TaxTracking" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_LAS" EntityType="SBPayrollDBEntitiesModel.Store.tbl_LAS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TechParams" EntityType="SBPayrollDBEntitiesModel.Store.TechParams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TransactionDef" EntityType="SBPayrollDBEntitiesModel.Store.TransactionDef" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Transactions" EntityType="SBPayrollDBEntitiesModel.Store.Transactions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TxnType" EntityType="SBPayrollDBEntitiesModel.Store.TxnType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserProfile" EntityType="SBPayrollDBEntitiesModel.Store.UserProfile" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="webpages_Membership" EntityType="SBPayrollDBEntitiesModel.Store.webpages_Membership" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="webpages_OAuthMembership" EntityType="SBPayrollDBEntitiesModel.Store.webpages_OAuthMembership" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="webpages_Roles" EntityType="SBPayrollDBEntitiesModel.Store.webpages_Roles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="webpages_UsersInRoles" EntityType="SBPayrollDBEntitiesModel.Store.webpages_UsersInRoles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GetEmpTransactions" EntityType="SBPayrollDBEntitiesModel.Store.GetEmpTransactions" store:Type="Views" store:Schema="dbo" store:Name="GetEmpTransactions">
+      <DefiningQuery>SELECT 
+      [GetEmpTransactions].[Surname] AS [Surname], 
+      [GetEmpTransactions].[MaritalStatus] AS [MaritalStatus], 
+      [GetEmpTransactions].[IsActive] AS [IsActive], 
+      [GetEmpTransactions].[ItemId] AS [ItemId], 
+      [GetEmpTransactions].[Amount] AS [Amount], 
+      [GetEmpTransactions].[Recurrent] AS [Recurrent], 
+      [GetEmpTransactions].[Enabled] AS [Enabled], 
+      [GetEmpTransactions].[BasicPay] AS [BasicPay], 
+      [GetEmpTransactions].[Department] AS [Department], 
+      [GetEmpTransactions].[DeptCode] AS [DeptCode], 
+      [GetEmpTransactions].[EmpTrack] AS [EmpTrack], 
+      [GetEmpTransactions].[Balance] AS [Balance], 
+      [GetEmpTransactions].[ItemTypeId] AS [ItemTypeId], 
+      [GetEmpTransactions].[TaxTrackingId] AS [TaxTrackingId], 
+      [GetEmpTransactions].[Active] AS [Active], 
+      [GetEmpTransactions].[AddToPension] AS [AddToPension], 
+      [GetEmpTransactions].[ShowYTDInPayslip] AS [ShowYTDInPayslip], 
+      [GetEmpTransactions].[EmpTxnId] AS [EmpTxnId], 
+      [GetEmpTransactions].[Processed] AS [Processed], 
+      [GetEmpTransactions].[Parent] AS [Parent], 
+      [GetEmpTransactions].[EmpNo] AS [EmpNo], 
+      [GetEmpTransactions].[EmployeeId] AS [EmployeeId], 
+      [GetEmpTransactions].[OtherNames] AS [OtherNames], 
+      [GetEmpTransactions].[DoB] AS [DoB], 
+      [GetEmpTransactions].[Gender] AS [Gender], 
+      [GetEmpTransactions].[Photo] AS [Photo], 
+      [GetEmpTransactions].[IsDeleted] AS [IsDeleted], 
+      [GetEmpTransactions].[PostDate] AS [PostDate], 
+      [GetEmpTransactions].[Enable] AS [Enable], 
+      [GetEmpTransactions].[SystemId] AS [SystemId], 
+      [GetEmpTransactions].[IsLoanRepaymentInFull] AS [IsLoanRepaymentInFull], 
+      [GetEmpTransactions].[LoanBeingRepayedId] AS [LoanBeingRepayedId], 
+      [GetEmpTransactions].[SaccoBeingRepayedId] AS [SaccoBeingRepayedId], 
+      [GetEmpTransactions].[IsLoanRepaymentInCash] AS [IsLoanRepaymentInCash], 
+      [GetEmpTransactions].[IsSharesRepaymentInCash] AS [IsSharesRepaymentInCash]
+      FROM [dbo].[GetEmpTransactions] AS [GetEmpTransactions]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwBankBranches" EntityType="SBPayrollDBEntitiesModel.Store.vwBankBranches" store:Type="Views" store:Schema="dbo" store:Name="vwBankBranches">
+      <DefiningQuery>SELECT 
+      [vwBankBranches].[BankBranchName] AS [BankBranchName], 
+      [vwBankBranches].[BankSortCode] AS [BankSortCode], 
+      [vwBankBranches].[BankName] AS [BankName], 
+      [vwBankBranches].[BankCode] AS [BankCode], 
+      [vwBankBranches].[BranchCode] AS [BranchCode], 
+      [vwBankBranches].[BranchName] AS [BranchName], 
+      [vwBankBranches].[Expr1] AS [Expr1]
+      FROM [dbo].[vwBankBranches] AS [vwBankBranches]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwPayrollMaster" EntityType="SBPayrollDBEntitiesModel.Store.vwPayrollMaster" store:Type="Views" store:Schema="dbo" store:Name="vwPayrollMaster">
+      <DefiningQuery>SELECT 
+      [vwPayrollMaster].[BankName] AS [BankName], 
+      [vwPayrollMaster].[BranchName] AS [BranchName], 
+      [vwPayrollMaster].[Surname] AS [Surname], 
+      [vwPayrollMaster].[OtherNames] AS [OtherNames], 
+      [vwPayrollMaster].[BranchCode] AS [BranchCode], 
+      [vwPayrollMaster].[BankSortCode] AS [BankSortCode], 
+      [vwPayrollMaster].[PaymentMode] AS [PaymentMode], 
+      [vwPayrollMaster].[BankBranchSortCode] AS [BankBranchSortCode], 
+      [vwPayrollMaster].[BankAccount] AS [BankAccount], 
+      [vwPayrollMaster].[IDNo] AS [IDNo], 
+      [vwPayrollMaster].[BankCode] AS [BankCode], 
+      [vwPayrollMaster].[Period] AS [Period], 
+      [vwPayrollMaster].[Year] AS [Year], 
+      [vwPayrollMaster].[PaymentDate] AS [PaymentDate], 
+      [vwPayrollMaster].[PrintedBy] AS [PrintedBy], 
+      [vwPayrollMaster].[PrintedOn] AS [PrintedOn], 
+      [vwPayrollMaster].[EmpName] AS [EmpName], 
+      [vwPayrollMaster].[PayPoint] AS [PayPoint], 
+      [vwPayrollMaster].[PIN] AS [PIN], 
+      [vwPayrollMaster].[NHIFNo] AS [NHIFNo], 
+      [vwPayrollMaster].[Department] AS [Department], 
+      [vwPayrollMaster].[NSSFNo] AS [NSSFNo], 
+      [vwPayrollMaster].[EmpGroup] AS [EmpGroup], 
+      [vwPayrollMaster].[EmpPayroll] AS [EmpPayroll], 
+      [vwPayrollMaster].[CompName] AS [CompName], 
+      [vwPayrollMaster].[CompAddr] AS [CompAddr], 
+      [vwPayrollMaster].[CompTel] AS [CompTel], 
+      [vwPayrollMaster].[PayeTax] AS [PayeTax], 
+      [vwPayrollMaster].[BasicPay] AS [BasicPay], 
+      [vwPayrollMaster].[Benefits] AS [Benefits], 
+      [vwPayrollMaster].[OtherDeductions] AS [OtherDeductions], 
+      [vwPayrollMaster].[GrossTaxableEarnings] AS [GrossTaxableEarnings], 
+      [vwPayrollMaster].[NetTaxableEarnings] AS [NetTaxableEarnings], 
+      [vwPayrollMaster].[GrossTax] AS [GrossTax], 
+      [vwPayrollMaster].[EmployerNSSF] AS [EmployerNSSF], 
+      [vwPayrollMaster].[PensionEmployee] AS [PensionEmployee], 
+      [vwPayrollMaster].[BankBranch] AS [BankBranch], 
+      [vwPayrollMaster].[Account] AS [Account], 
+      [vwPayrollMaster].[NSSF] AS [NSSF], 
+      [vwPayrollMaster].[NHIF] AS [NHIF], 
+      [vwPayrollMaster].[NetPay] AS [NetPay], 
+      [vwPayrollMaster].[EmpNo] AS [EmpNo], 
+      [vwPayrollMaster].[Variables] AS [Variables], 
+      [vwPayrollMaster].[MortgageRelief] AS [MortgageRelief], 
+      [vwPayrollMaster].[PersonalRelief] AS [PersonalRelief], 
+      [vwPayrollMaster].[PensionEmployer] AS [PensionEmployer], 
+      [vwPayrollMaster].[InsuranceRelief] AS [InsuranceRelief], 
+      [vwPayrollMaster].[EmployeeId] AS [EmployeeId], 
+      [vwPayrollMaster].[EmployerId] AS [EmployerId]
+      FROM [dbo].[vwPayrollMaster] AS [vwPayrollMaster]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwPayrollMaster_Temp" EntityType="SBPayrollDBEntitiesModel.Store.vwPayrollMaster_Temp" store:Type="Views" store:Schema="dbo" store:Name="vwPayrollMaster_Temp">
+      <DefiningQuery>SELECT 
+      [vwPayrollMaster_Temp].[BankName] AS [BankName], 
+      [vwPayrollMaster_Temp].[BranchName] AS [BranchName], 
+      [vwPayrollMaster_Temp].[Surname] AS [Surname], 
+      [vwPayrollMaster_Temp].[OtherNames] AS [OtherNames], 
+      [vwPayrollMaster_Temp].[BranchCode] AS [BranchCode], 
+      [vwPayrollMaster_Temp].[BankSortCode] AS [BankSortCode], 
+      [vwPayrollMaster_Temp].[PaymentMode] AS [PaymentMode], 
+      [vwPayrollMaster_Temp].[BankBranchSortCode] AS [BankBranchSortCode], 
+      [vwPayrollMaster_Temp].[BankAccount] AS [BankAccount], 
+      [vwPayrollMaster_Temp].[IDNo] AS [IDNo], 
+      [vwPayrollMaster_Temp].[BankCode] AS [BankCode], 
+      [vwPayrollMaster_Temp].[Period] AS [Period], 
+      [vwPayrollMaster_Temp].[Year] AS [Year], 
+      [vwPayrollMaster_Temp].[PaymentDate] AS [PaymentDate], 
+      [vwPayrollMaster_Temp].[PrintedBy] AS [PrintedBy], 
+      [vwPayrollMaster_Temp].[PrintedOn] AS [PrintedOn], 
+      [vwPayrollMaster_Temp].[EmpName] AS [EmpName], 
+      [vwPayrollMaster_Temp].[PayPoint] AS [PayPoint], 
+      [vwPayrollMaster_Temp].[PIN] AS [PIN], 
+      [vwPayrollMaster_Temp].[NHIFNo] AS [NHIFNo], 
+      [vwPayrollMaster_Temp].[Department] AS [Department], 
+      [vwPayrollMaster_Temp].[NSSFNo] AS [NSSFNo], 
+      [vwPayrollMaster_Temp].[EmpGroup] AS [EmpGroup], 
+      [vwPayrollMaster_Temp].[EmpPayroll] AS [EmpPayroll], 
+      [vwPayrollMaster_Temp].[CompName] AS [CompName], 
+      [vwPayrollMaster_Temp].[CompAddr] AS [CompAddr], 
+      [vwPayrollMaster_Temp].[CompTel] AS [CompTel], 
+      [vwPayrollMaster_Temp].[PayeTax] AS [PayeTax], 
+      [vwPayrollMaster_Temp].[BasicPay] AS [BasicPay], 
+      [vwPayrollMaster_Temp].[Benefits] AS [Benefits], 
+      [vwPayrollMaster_Temp].[OtherDeductions] AS [OtherDeductions], 
+      [vwPayrollMaster_Temp].[GrossTaxableEarnings] AS [GrossTaxableEarnings], 
+      [vwPayrollMaster_Temp].[NetTaxableEarnings] AS [NetTaxableEarnings], 
+      [vwPayrollMaster_Temp].[GrossTax] AS [GrossTax], 
+      [vwPayrollMaster_Temp].[EmployerNSSF] AS [EmployerNSSF], 
+      [vwPayrollMaster_Temp].[PensionEmployee] AS [PensionEmployee], 
+      [vwPayrollMaster_Temp].[BankBranch] AS [BankBranch], 
+      [vwPayrollMaster_Temp].[Account] AS [Account], 
+      [vwPayrollMaster_Temp].[NSSF] AS [NSSF], 
+      [vwPayrollMaster_Temp].[NHIF] AS [NHIF], 
+      [vwPayrollMaster_Temp].[NetPay] AS [NetPay], 
+      [vwPayrollMaster_Temp].[EmpNo] AS [EmpNo], 
+      [vwPayrollMaster_Temp].[Variables] AS [Variables], 
+      [vwPayrollMaster_Temp].[MortgageRelief] AS [MortgageRelief], 
+      [vwPayrollMaster_Temp].[PersonalRelief] AS [PersonalRelief], 
+      [vwPayrollMaster_Temp].[PensionEmployer] AS [PensionEmployer], 
+      [vwPayrollMaster_Temp].[InsuranceRelief] AS [InsuranceRelief], 
+      [vwPayrollMaster_Temp].[EmployeeId] AS [EmployeeId], 
+      [vwPayrollMaster_Temp].[EmployerId] AS [EmployerId]
+      FROM [dbo].[vwPayrollMaster_Temp] AS [vwPayrollMaster_Temp]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwPayslipDet" EntityType="SBPayrollDBEntitiesModel.Store.vwPayslipDet" store:Type="Views" store:Schema="dbo" store:Name="vwPayslipDet">
+      <DefiningQuery>SELECT 
+      [vwPayslipDet].[Id] AS [Id], 
+      [vwPayslipDet].[EmpNo] AS [EmpNo], 
+      [vwPayslipDet].[Surname] AS [Surname], 
+      [vwPayslipDet].[OtherNames] AS [OtherNames], 
+      [vwPayslipDet].[ItemId] AS [ItemId], 
+      [vwPayslipDet].[Balance] AS [Balance], 
+      [vwPayslipDet].[ReFField] AS [ReFField], 
+      [vwPayslipDet].[RepayAmount] AS [RepayAmount], 
+      [vwPayslipDet].[Period] AS [Period], 
+      [vwPayslipDet].[Year] AS [Year], 
+      [vwPayslipDet].[TxnDate] AS [TxnDate], 
+      [vwPayslipDet].[PostDate] AS [PostDate], 
+      [vwPayslipDet].[Description] AS [Description], 
+      [vwPayslipDet].[YTD] AS [YTD], 
+      [vwPayslipDet].[InitialAmount] AS [InitialAmount], 
+      [vwPayslipDet].[LoanType] AS [LoanType], 
+      [vwPayslipDet].[BankAccount] AS [BankAccount], 
+      [vwPayslipDet].[BankCode] AS [BankCode], 
+      [vwPayslipDet].[PaymentMode] AS [PaymentMode], 
+      [vwPayslipDet].[ItemTypeId] AS [ItemTypeId], 
+      [vwPayslipDet].[DEType] AS [DEType], 
+      [vwPayslipDet].[EmpTxnId] AS [EmpTxnId], 
+      [vwPayslipDet].[TaxTracking] AS [TaxTracking], 
+      [vwPayslipDet].[ShowInPayslip] AS [ShowInPayslip], 
+      [vwPayslipDet].[IsStatutory] AS [IsStatutory], 
+      [vwPayslipDet].[Amount] AS [Amount], 
+      [vwPayslipDet].[Parent] AS [Parent], 
+      [vwPayslipDet].[EmployeeId] AS [EmployeeId], 
+      [vwPayslipDet].[IsDeleted] AS [IsDeleted], 
+      [vwPayslipDet].[IsActive] AS [IsActive], 
+      [vwPayslipDet].[EmployerId] AS [EmployerId], 
+      [vwPayslipDet].[SystemId] AS [SystemId], 
+      [vwPayslipDet].[AccumulativePayment] AS [AccumulativePayment], 
+      [vwPayslipDet].[IsLoanRepaymentInFull] AS [IsLoanRepaymentInFull], 
+      [vwPayslipDet].[IsSharesRepaymentInCash] AS [IsSharesRepaymentInCash], 
+      [vwPayslipDet].[IsLoanRepaymentInCash] AS [IsLoanRepaymentInCash]
+      FROM [dbo].[vwPayslipDet] AS [vwPayslipDet]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwPayslipDet_Temp" EntityType="SBPayrollDBEntitiesModel.Store.vwPayslipDet_Temp" store:Type="Views" store:Schema="dbo" store:Name="vwPayslipDet_Temp">
+      <DefiningQuery>SELECT 
+      [vwPayslipDet_Temp].[EmployeeId] AS [EmployeeId], 
+      [vwPayslipDet_Temp].[EmpNo] AS [EmpNo], 
+      [vwPayslipDet_Temp].[Surname] AS [Surname], 
+      [vwPayslipDet_Temp].[OtherNames] AS [OtherNames], 
+      [vwPayslipDet_Temp].[ItemId] AS [ItemId], 
+      [vwPayslipDet_Temp].[Balance] AS [Balance], 
+      [vwPayslipDet_Temp].[TxnDate] AS [TxnDate], 
+      [vwPayslipDet_Temp].[ReFField] AS [ReFField], 
+      [vwPayslipDet_Temp].[RepayAmount] AS [RepayAmount], 
+      [vwPayslipDet_Temp].[PostDate] AS [PostDate], 
+      [vwPayslipDet_Temp].[InitialAmount] AS [InitialAmount], 
+      [vwPayslipDet_Temp].[LoanType] AS [LoanType], 
+      [vwPayslipDet_Temp].[BankAccount] AS [BankAccount], 
+      [vwPayslipDet_Temp].[BankCode] AS [BankCode], 
+      [vwPayslipDet_Temp].[PaymentMode] AS [PaymentMode], 
+      [vwPayslipDet_Temp].[ItemTypeId] AS [ItemTypeId], 
+      [vwPayslipDet_Temp].[Parent] AS [Parent], 
+      [vwPayslipDet_Temp].[EmpTxnId] AS [EmpTxnId], 
+      [vwPayslipDet_Temp].[Period] AS [Period], 
+      [vwPayslipDet_Temp].[Year] AS [Year], 
+      [vwPayslipDet_Temp].[Description] AS [Description], 
+      [vwPayslipDet_Temp].[TaxTracking] AS [TaxTracking], 
+      [vwPayslipDet_Temp].[Amount] AS [Amount], 
+      [vwPayslipDet_Temp].[DEType] AS [DEType], 
+      [vwPayslipDet_Temp].[IsStatutory] AS [IsStatutory], 
+      [vwPayslipDet_Temp].[ShowInPayslip] AS [ShowInPayslip], 
+      [vwPayslipDet_Temp].[YTD] AS [YTD], 
+      [vwPayslipDet_Temp].[IsActive] AS [IsActive], 
+      [vwPayslipDet_Temp].[IsDeleted] AS [IsDeleted], 
+      [vwPayslipDet_Temp].[EmployerId] AS [EmployerId], 
+      [vwPayslipDet_Temp].[SystemId] AS [SystemId], 
+      [vwPayslipDet_Temp].[AccumulativePayment] AS [AccumulativePayment], 
+      [vwPayslipDet_Temp].[IsLoanRepaymentInFull] AS [IsLoanRepaymentInFull], 
+      [vwPayslipDet_Temp].[IsSharesRepaymentInCash] AS [IsSharesRepaymentInCash], 
+      [vwPayslipDet_Temp].[IsLoanRepaymentInCash] AS [IsLoanRepaymentInCash]
+      FROM [dbo].[vwPayslipDet_Temp] AS [vwPayslipDet_Temp]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_BankBranch_Banks" Association="SBPayrollDBEntitiesModel.Store.FK_BankBranch_Banks">
+      <End Role="Banks" EntitySet="Banks" />
+      <End Role="BankBranch" EntitySet="BankBranch" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employees_Employers" Association="SBPayrollDBEntitiesModel.Store.FK_Employees_Employers">
+      <End Role="Employers" EntitySet="Employers" />
+      <End Role="Employees" EntitySet="Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PayrollItems_TaxTracking" Association="SBPayrollDBEntitiesModel.Store.FK_PayrollItems_TaxTracking">
+      <End Role="TaxTracking" EntitySet="TaxTracking" />
+      <End Role="PayrollItems" EntitySet="PayrollItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Settings_SettingsGroup" Association="SBPayrollDBEntitiesModel.Store.FK_Settings_SettingsGroup">
+      <End Role="SettingsGroup" EntitySet="SettingsGroup" />
+      <End Role="Settings" EntitySet="Settings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_spAllowedReportsRolesMenus_spReportsMenuItems" Association="SBPayrollDBEntitiesModel.Store.FK_spAllowedReportsRolesMenus_spReportsMenuItems">
+      <End Role="spReportsMenuItems" EntitySet="spReportsMenuItems" />
+      <End Role="spAllowedReportsRolesMenus" EntitySet="spAllowedReportsRolesMenus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_spAllowedRoleMenus_spMenuItems" Association="SBPayrollDBEntitiesModel.Store.FK_spAllowedRoleMenus_spMenuItems">
+      <End Role="spMenuItems" EntitySet="spMenuItems" />
+      <End Role="spAllowedRoleMenus" EntitySet="spAllowedRoleMenus" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Accounts">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="EmpNo" Type="nchar" Nullable="false" MaxLength="10" />
+    <Property Name="AccountType" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="BookBalance" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BankBranch">
+    <Key>
+      <PropertyRef Name="BankSortCode" />
+    </Key>
+    <Property Name="BankSortCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="BranchCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="BranchName" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="BankCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Banks">
+    <Key>
+      <PropertyRef Name="BankCode" />
+    </Key>
+    <Property Name="BankCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="BankName" Type="nvarchar" Nullable="false" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="Benefits">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="Rate" Type="money" />
+    <Property Name="IsDeleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="DeductionsTracker">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PayrollItemId" Type="nvarchar" MaxLength="150" />
+    <Property Name="ItemTypeDescription" Type="nvarchar" MaxLength="150" />
+    <Property Name="LoanYTD" Type="decimal" />
+    <Property Name="SaccoYTD" Type="decimal" />
+    <Property Name="Amount" Type="decimal" />
+    <Property Name="EmployeeName" Type="nvarchar" MaxLength="150" />
+    <Property Name="EmployeeId" Type="int" />
+    <Property Name="EmployeeTransactionId" Type="int" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Term" Type="int" />
+    <Property Name="IsProcessed" Type="bit" />
+    <Property Name="IsClosed" Type="bit" />
+  </EntityType>
+  <EntityType Name="Departments">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="nvarchar" MaxLength="2" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsDeleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="Employee_Ext">
+    <Key>
+      <PropertyRef Name="EmpNo" />
+      <PropertyRef Name="ExFieldName" />
+    </Key>
+    <Property Name="EmpNo" Type="nchar" Nullable="false" MaxLength="10" />
+    <Property Name="ExFieldName" Type="int" Nullable="false" />
+    <Property Name="ExFieldStr" Type="varchar" MaxLength="250" />
+    <Property Name="ExFieldInt" Type="int" />
+    <Property Name="ExFieldDate" Type="datetime" />
+    <Property Name="ExFieldDecimal" Type="numeric" />
+    <Property Name="EmployerId" Type="int" />
+  </EntityType>
+  <EntityType Name="Employee_Ext_Fields">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="FType" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Employees">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="EmpNo" Type="nvarchar" MaxLength="250" />
+    <Property Name="Surname" Type="nvarchar" MaxLength="250" />
+    <Property Name="OtherNames" Type="nvarchar" MaxLength="250" />
+    <Property Name="Email" Type="nvarchar" MaxLength="250" />
+    <Property Name="DoB" Type="date" />
+    <Property Name="MaritalStatus" Type="nvarchar" MaxLength="1" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="1" />
+    <Property Name="Photo" Type="nvarchar(max)" />
+    <Property Name="DoE" Type="date" />
+    <Property Name="BasicComputation" Type="nvarchar" MaxLength="1" />
+    <Property Name="BasicPay" Type="money" />
+    <Property Name="PersonalRelief" Type="money" />
+    <Property Name="MortgageRelief" Type="money" />
+    <Property Name="InsuranceRelief" Type="money" />
+    <Property Name="NSSFNo" Type="nvarchar" MaxLength="250" />
+    <Property Name="NHIFNo" Type="nvarchar" MaxLength="250" />
+    <Property Name="IDNo" Type="nvarchar" MaxLength="250" />
+    <Property Name="PINNo" Type="nvarchar" MaxLength="250" />
+    <Property Name="DepartmentId" Type="int" />
+    <Property Name="EmployerId" Type="int" Nullable="false" />
+    <Property Name="PayPoint" Type="nvarchar" MaxLength="250" />
+    <Property Name="EmpGroup" Type="nvarchar" MaxLength="250" />
+    <Property Name="EmpPayroll" Type="nvarchar" MaxLength="250" />
+    <Property Name="PrevEmployer" Type="nvarchar" MaxLength="250" />
+    <Property Name="DateLeft" Type="date" />
+    <Property Name="PaymentMode" Type="nvarchar" MaxLength="250" />
+    <Property Name="TelephoneNo" Type="nvarchar" MaxLength="250" />
+    <Property Name="ChequeNo" Type="nvarchar" MaxLength="250" />
+    <Property Name="BankCode" Type="nvarchar" MaxLength="250" />
+    <Property Name="BankAccount" Type="nvarchar" MaxLength="250" />
+    <Property Name="LeaveBalance" Type="nvarchar" MaxLength="250" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="250" />
+    <Property Name="CreatedOn" Type="date" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="SystemId" Type="nvarchar" MaxLength="250" />
+    <Property Name="IsDisabled" Type="bit" />
+    <Property Name="MpesaReferenceNo" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="EmployeesBankTransfers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="EmpNo" Type="nvarchar" MaxLength="250" />
+    <Property Name="BankSortCode" Type="nvarchar" MaxLength="250" />
+    <Property Name="EmployerBankId" Type="int" />
+    <Property Name="EmployerId" Type="int" />
+    <Property Name="EmployeeId" Type="int" />
+  </EntityType>
+  <EntityType Name="EmployeeTransactions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PostDate" Type="date" Nullable="false" />
+    <Property Name="EmpNo" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+    <Property Name="Enabled" Type="bit" Nullable="false" />
+    <Property Name="Recurrent" Type="bit" Nullable="false" />
+    <Property Name="ItemId" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="Amount" Type="money" Nullable="false" />
+    <Property Name="Balance" Type="money" />
+    <Property Name="InitialAmount" Type="money" />
+    <Property Name="Processed" Type="bit" />
+    <Property Name="TrackYTD" Type="bit" />
+    <Property Name="ShowYTDInPayslip" Type="bit" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="250" />
+    <Property Name="LastChangedBy" Type="nvarchar" MaxLength="250" />
+    <Property Name="LastChangeDate" Type="date" />
+    <Property Name="AuthorizedBy" Type="nvarchar" MaxLength="250" />
+    <Property Name="AuthorizeDate" Type="date" />
+    <Property Name="LoanType" Type="nvarchar" MaxLength="250" />
+    <Property Name="AccumulativePayment" Type="money" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="IsLoanRepaymentInFull" Type="bit" />
+    <Property Name="LoanBeingRepayedId" Type="int" />
+    <Property Name="SaccoBeingRepayedId" Type="int" />
+    <Property Name="IsLoanRepaymentInCash" Type="bit" />
+    <Property Name="IsSharesRepaymentInCash" Type="bit" />
+  </EntityType>
+  <EntityType Name="EmployerBanks">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="EmployerId" Type="int" />
+    <Property Name="BankSortCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="AccountName" Type="nvarchar" MaxLength="50" />
+    <Property Name="AccountNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Signatory" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsDefault" Type="bit" />
+  </EntityType>
+  <EntityType Name="Employers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" MaxLength="250" />
+    <Property Name="Email" Type="nvarchar" MaxLength="250" />
+    <Property Name="Telephone" Type="nvarchar" MaxLength="250" />
+    <Property Name="Address1" Type="nvarchar" MaxLength="250" />
+    <Property Name="Address2" Type="nvarchar" MaxLength="250" />
+    <Property Name="Slogan" Type="nvarchar" MaxLength="250" />
+    <Property Name="AuthorizedSignatory" Type="nvarchar" MaxLength="250" />
+    <Property Name="PIN" Type="nvarchar" MaxLength="250" />
+    <Property Name="NHIF" Type="nvarchar" MaxLength="250" />
+    <Property Name="NSSF" Type="nvarchar" MaxLength="250" />
+    <Property Name="BankBranchSortCode" Type="nvarchar" MaxLength="250" />
+    <Property Name="AccountName" Type="nvarchar" MaxLength="250" />
+    <Property Name="AccountNo" Type="nvarchar" MaxLength="250" />
+    <Property Name="Logo" Type="nvarchar" MaxLength="250" />
+    <Property Name="IsDefault" Type="bit" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="IsDeleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="EmpNonCashBenefits">
+    <Key>
+      <PropertyRef Name="EmpNo" />
+      <PropertyRef Name="BenefitId" />
+    </Key>
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+    <Property Name="EmpNo" Type="nchar" Nullable="false" MaxLength="10" />
+    <Property Name="BenefitId" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="Rate" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HourlyPayment">
+    <Key>
+      <PropertyRef Name="Empno" />
+      <PropertyRef Name="WorkDate" />
+    </Key>
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+    <Property Name="Empno" Type="nchar" Nullable="false" MaxLength="10" />
+    <Property Name="WorkDate" Type="date" Nullable="false" />
+    <Property Name="WorkHours" Type="int" Nullable="false" />
+    <Property Name="RatePerHour" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LeaveTransactions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="PostDate" Type="date" />
+    <Property Name="EffectiveDate" Type="date" />
+    <Property Name="LeaveDesc" Type="nvarchar" MaxLength="50" />
+    <Property Name="NoofDays" Type="int" />
+  </EntityType>
+  <EntityType Name="NHIFRates">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FromAmt" Type="money" Nullable="false" />
+    <Property Name="ToAmt" Type="money" Nullable="false" />
+    <Property Name="Rate" Type="smallmoney" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PackedTransactions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PackDate" Type="datetime" Nullable="false" />
+    <Property Name="EmpNo" Type="nchar" Nullable="false" MaxLength="10" />
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+    <Property Name="TxnCode" Type="nchar" Nullable="false" MaxLength="10" />
+    <Property Name="Amount" Type="smallmoney" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="Authorized" Type="bit" />
+  </EntityType>
+  <EntityType Name="PayeeRates">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FromAmt" Type="money" Nullable="false" />
+    <Property Name="ToAmt" Type="money" Nullable="false" />
+    <Property Name="Rate" Type="smallmoney" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PayrollItems">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="Description" Type="nvarchar" MaxLength="150" />
+    <Property Name="ItemTypeId" Type="nvarchar" MaxLength="10" />
+    <Property Name="TaxTrackingId" Type="nvarchar" MaxLength="10" />
+    <Property Name="PayableTo" Type="nvarchar" MaxLength="50" />
+    <Property Name="GLAccount" Type="nvarchar" MaxLength="50" />
+    <Property Name="ReFField" Type="int" />
+    <Property Name="DefaultItem" Type="bit" />
+    <Property Name="AddToPension" Type="bit" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="Enable" Type="bit" />
+    <Property Name="IsDeleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="PayrollItemType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Parent" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsDefault" Type="bit" />
+  </EntityType>
+  <EntityType Name="Payrolls">
+    <Key>
+      <PropertyRef Name="Period" />
+      <PropertyRef Name="Year" />
+      <PropertyRef Name="EmployerId" />
+    </Key>
+    <Property Name="Period" Type="int" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="EmployerId" Type="int" Nullable="false" />
+    <Property Name="DateRun" Type="date" />
+    <Property Name="RunBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="Approved" Type="bit" />
+    <Property Name="ApprovedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsOpen" Type="bit" Nullable="false" />
+    <Property Name="Processed" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PayrollTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="nvarchar" MaxLength="250" />
+    <Property Name="Remarks" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="PayslipDet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="EmpNo" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+    <Property Name="EmployerId" Type="int" />
+    <Property Name="EmpTxnId" Type="int" Nullable="false" />
+    <Property Name="Period" Type="int" Nullable="false" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="TaxTracking" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Amount" Type="decimal" Nullable="false" />
+    <Property Name="DEType" Type="nvarchar" Nullable="false" MaxLength="1" />
+    <Property Name="IsStatutory" Type="bit" Nullable="false" />
+    <Property Name="ShowInPayslip" Type="bit" />
+    <Property Name="YTD" Type="decimal" />
+    <Property Name="IsLoanRepaymentInCash" Type="bit" />
+    <Property Name="IsSharesRepaymentInCash" Type="bit" />
+  </EntityType>
+  <EntityType Name="PayslipDet_Temp">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="EmpNo" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+    <Property Name="EmployerId" Type="int" />
+    <Property Name="EmpTxnId" Type="int" Nullable="false" />
+    <Property Name="Period" Type="int" Nullable="false" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="TaxTracking" Type="nchar" Nullable="false" MaxLength="10" />
+    <Property Name="Amount" Type="decimal" Nullable="false" />
+    <Property Name="DEType" Type="nvarchar" Nullable="false" MaxLength="1" />
+    <Property Name="IsStatutory" Type="bit" Nullable="false" />
+    <Property Name="ShowInPayslip" Type="bit" />
+    <Property Name="YTD" Type="decimal" />
+    <Property Name="IsLoanRepaymentInCash" Type="bit" />
+    <Property Name="IsSharesRepaymentInCash" Type="bit" />
+  </EntityType>
+  <EntityType Name="PayslipMaster">
+    <Key>
+      <PropertyRef Name="Period" />
+      <PropertyRef Name="Year" />
+      <PropertyRef Name="EmpNo" />
+    </Key>
+    <Property Name="Period" Type="int" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="EmpNo" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+    <Property Name="EmployerId" Type="int" />
+    <Property Name="PaymentDate" Type="date" Nullable="false" />
+    <Property Name="PrintedBy" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="PrintedOn" Type="datetime" Nullable="false" />
+    <Property Name="EmpName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="PayPoint" Type="nvarchar" MaxLength="100" />
+    <Property Name="PIN" Type="nvarchar" MaxLength="100" />
+    <Property Name="NHIFNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="NSSFNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="Department" Type="nvarchar" MaxLength="100" />
+    <Property Name="EmpGroup" Type="nvarchar" MaxLength="100" />
+    <Property Name="EmpPayroll" Type="nvarchar" MaxLength="100" />
+    <Property Name="CompName" Type="nvarchar" MaxLength="100" />
+    <Property Name="CompAddr" Type="nvarchar" MaxLength="100" />
+    <Property Name="CompTel" Type="nvarchar" MaxLength="100" />
+    <Property Name="PayeTax" Type="money" Nullable="false" />
+    <Property Name="BasicPay" Type="money" Nullable="false" />
+    <Property Name="Benefits" Type="money" Nullable="false" />
+    <Property Name="Variables" Type="money" Nullable="false" />
+    <Property Name="OtherDeductions" Type="money" Nullable="false" />
+    <Property Name="GrossTaxableEarnings" Type="money" Nullable="false" />
+    <Property Name="NetTaxableEarnings" Type="money" Nullable="false" />
+    <Property Name="MortgageRelief" Type="money" Nullable="false" />
+    <Property Name="InsuranceRelief" Type="money" Nullable="false" />
+    <Property Name="GrossTax" Type="money" Nullable="false" />
+    <Property Name="PersonalRelief" Type="money" Nullable="false" />
+    <Property Name="PensionEmployer" Type="money" Nullable="false" />
+    <Property Name="EmployerNSSF" Type="money" Nullable="false" />
+    <Property Name="PensionEmployee" Type="money" Nullable="false" />
+    <Property Name="BankBranch" Type="nvarchar" MaxLength="100" />
+    <Property Name="Account" Type="nvarchar" MaxLength="100" />
+    <Property Name="NSSF" Type="money" Nullable="false" />
+    <Property Name="NHIF" Type="money" Nullable="false" />
+    <Property Name="NetPay" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PayslipMaster_Temp">
+    <Key>
+      <PropertyRef Name="Period" />
+      <PropertyRef Name="Year" />
+      <PropertyRef Name="EmpNo" />
+    </Key>
+    <Property Name="Period" Type="int" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="EmpNo" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+    <Property Name="EmployerId" Type="int" />
+    <Property Name="PaymentDate" Type="date" Nullable="false" />
+    <Property Name="PrintedBy" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="PrintedOn" Type="datetime" Nullable="false" />
+    <Property Name="EmpName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="PayPoint" Type="nvarchar" MaxLength="100" />
+    <Property Name="PIN" Type="nvarchar" MaxLength="100" />
+    <Property Name="NHIFNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="NSSFNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="Department" Type="nvarchar" MaxLength="100" />
+    <Property Name="EmpGroup" Type="nvarchar" MaxLength="100" />
+    <Property Name="EmpPayroll" Type="nvarchar" MaxLength="100" />
+    <Property Name="CompName" Type="nvarchar" MaxLength="100" />
+    <Property Name="CompAddr" Type="nvarchar" MaxLength="100" />
+    <Property Name="CompTel" Type="nvarchar" MaxLength="100" />
+    <Property Name="PayeTax" Type="money" Nullable="false" />
+    <Property Name="BasicPay" Type="money" Nullable="false" />
+    <Property Name="Benefits" Type="money" Nullable="false" />
+    <Property Name="Variables" Type="money" Nullable="false" />
+    <Property Name="OtherDeductions" Type="money" Nullable="false" />
+    <Property Name="GrossTaxableEarnings" Type="money" Nullable="false" />
+    <Property Name="NetTaxableEarnings" Type="money" Nullable="false" />
+    <Property Name="MortgageRelief" Type="money" Nullable="false" />
+    <Property Name="InsuranceRelief" Type="money" Nullable="false" />
+    <Property Name="GrossTax" Type="money" Nullable="false" />
+    <Property Name="PersonalRelief" Type="money" Nullable="false" />
+    <Property Name="PensionEmployer" Type="money" Nullable="false" />
+    <Property Name="EmployerNSSF" Type="money" Nullable="false" />
+    <Property Name="PensionEmployee" Type="money" Nullable="false" />
+    <Property Name="BankBranch" Type="nvarchar" MaxLength="100" />
+    <Property Name="Account" Type="nvarchar" MaxLength="100" />
+    <Property Name="NSSF" Type="money" Nullable="false" />
+    <Property Name="NHIF" Type="money" Nullable="false" />
+    <Property Name="NetPay" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Settings">
+    <Key>
+      <PropertyRef Name="SSKey" />
+    </Key>
+    <Property Name="SSKey" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="SSValue" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SSValueType" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="SGroup" Type="int" Nullable="false" />
+    <Property Name="SSSystem" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SettingsGroup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="GroupName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Parent" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="spAllowedReportsRolesMenus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+    <Property Name="MenuItemId" Type="int" Nullable="false" />
+    <Property Name="Allowed" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="spAllowedRoleMenus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+    <Property Name="MenuItemId" Type="int" Nullable="false" />
+    <Property Name="Allowed" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="spAllowedRoleMenusweb">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoleId" Type="int" />
+    <Property Name="MenuItemId" Type="int" />
+    <Property Name="Allowed" Type="bit" />
+  </EntityType>
+  <EntityType Name="spMenuItems">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="mnuName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="spMenus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="mnuName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="spReportsMenuItems">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="mnuName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="spRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ShortCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="spUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="Status" Type="nvarchar" Nullable="false" MaxLength="1" />
+    <Property Name="Locked" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="SystemId" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="Surname" Type="nvarchar" MaxLength="200" />
+    <Property Name="OtherNames" Type="nvarchar" MaxLength="200" />
+    <Property Name="NationalID" Type="nvarchar" MaxLength="200" />
+    <Property Name="DateOfBirth" Type="date" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="50" />
+    <Property Name="Telephone" Type="nvarchar" MaxLength="200" />
+    <Property Name="Email" Type="nvarchar" MaxLength="200" />
+    <Property Name="DateJoined" Type="date" />
+    <Property Name="InformBy" Type="nvarchar" MaxLength="200" />
+    <Property Name="Photo" Type="nvarchar(max)" />
+    <Property Name="password_hash" Type="text" />
+    <Property Name="password_salt" Type="text" />
+  </EntityType>
+  <EntityType Name="spUsersInRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TaxTracking">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="Status" Type="nchar" MaxLength="10" />
+    <Property Name="IsDefault" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_LAS">
+    <Key>
+      <PropertyRef Name="las_id" />
+    </Key>
+    <Property Name="las_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="mac_address" Type="text" />
+    <Property Name="computer_name" Type="text" />
+    <Property Name="activation_key" Type="text" />
+    <Property Name="date_activated" Type="text" />
+    <Property Name="next_expiry_date" Type="text" />
+    <Property Name="days_for_expiry" Type="text" />
+  </EntityType>
+  <EntityType Name="TechParams">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="strtdt" Type="date" />
+    <Property Name="edc" Type="int" />
+  </EntityType>
+  <EntityType Name="TransactionDef">
+    <Key>
+      <PropertyRef Name="TxnCode" />
+    </Key>
+    <Property Name="TxnCode" Type="nchar" Nullable="false" MaxLength="10" />
+    <Property Name="DataEntry" Type="nchar" Nullable="false" MaxLength="1" />
+    <Property Name="PayrollItem" Type="nchar" Nullable="false" MaxLength="15" />
+    <Property Name="DefaultAmount" Type="smallmoney" />
+    <Property Name="Enabled" Type="bit" />
+    <Property Name="Recurrent" Type="bit" />
+    <Property Name="TrackYTD" Type="bit" />
+  </EntityType>
+  <EntityType Name="Transactions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PostDate" Type="datetime" />
+    <Property Name="Amount" Type="money" />
+    <Property Name="DRCR" Type="nchar" MaxLength="10" />
+    <Property Name="Narrative" Type="nvarchar" MaxLength="50" />
+    <Property Name="TxnType" Type="int" />
+  </EntityType>
+  <EntityType Name="TxnType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UserProfile">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="webpages_Membership">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="CreateDate" Type="smalldatetime" />
+    <Property Name="ConfirmationToken" Type="nvarchar" MaxLength="128" />
+    <Property Name="IsConfirmed" Type="bit" />
+    <Property Name="LastPasswordFailureDate" Type="smalldatetime" />
+    <Property Name="PasswordFailuresSinceLastSuccess" Type="int" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="PasswordChangedDate" Type="smalldatetime" />
+    <Property Name="PasswordSalt" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="PasswordVerificationToken" Type="nvarchar" MaxLength="128" />
+    <Property Name="PasswordVerificationTokenExpirationDate" Type="smalldatetime" />
+  </EntityType>
+  <EntityType Name="webpages_OAuthMembership">
+    <Key>
+      <PropertyRef Name="Provider" />
+      <PropertyRef Name="ProviderUserId" />
+    </Key>
+    <Property Name="Provider" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="ProviderUserId" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="webpages_Roles">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="RoleId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoleName" Type="nvarchar" Nullable="false" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="webpages_UsersInRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'sbpayrolldb_november.dbo.GetEmpTransactions' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="GetEmpTransactions">
+    <Key>
+      <PropertyRef Name="ItemId" />
+      <PropertyRef Name="Amount" />
+      <PropertyRef Name="Recurrent" />
+      <PropertyRef Name="Enabled" />
+      <PropertyRef Name="EmpTxnId" />
+      <PropertyRef Name="EmployeeId" />
+      <PropertyRef Name="PostDate" />
+    </Key>
+    <Property Name="Surname" Type="nvarchar" MaxLength="250" />
+    <Property Name="MaritalStatus" Type="nvarchar" MaxLength="1" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="ItemId" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="Amount" Type="money" Nullable="false" />
+    <Property Name="Recurrent" Type="bit" Nullable="false" />
+    <Property Name="Enabled" Type="bit" Nullable="false" />
+    <Property Name="BasicPay" Type="money" />
+    <Property Name="Department" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeptCode" Type="nvarchar" MaxLength="2" />
+    <Property Name="EmpTrack" Type="bit" />
+    <Property Name="Balance" Type="money" />
+    <Property Name="ItemTypeId" Type="nvarchar" MaxLength="10" />
+    <Property Name="TaxTrackingId" Type="nvarchar" MaxLength="10" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="AddToPension" Type="bit" />
+    <Property Name="ShowYTDInPayslip" Type="bit" />
+    <Property Name="EmpTxnId" Type="int" Nullable="false" />
+    <Property Name="Processed" Type="bit" />
+    <Property Name="Parent" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmpNo" Type="nvarchar" MaxLength="250" />
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+    <Property Name="OtherNames" Type="nvarchar" MaxLength="250" />
+    <Property Name="DoB" Type="date" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="1" />
+    <Property Name="Photo" Type="nvarchar(max)" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="PostDate" Type="date" Nullable="false" />
+    <Property Name="Enable" Type="bit" />
+    <Property Name="SystemId" Type="nvarchar" MaxLength="250" />
+    <Property Name="IsLoanRepaymentInFull" Type="bit" />
+    <Property Name="LoanBeingRepayedId" Type="int" />
+    <Property Name="SaccoBeingRepayedId" Type="int" />
+    <Property Name="IsLoanRepaymentInCash" Type="bit" />
+    <Property Name="IsSharesRepaymentInCash" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'sbpayrolldb_november.dbo.vwBankBranches' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vwBankBranches">
+    <Key>
+      <PropertyRef Name="BankBranchName" />
+      <PropertyRef Name="BankSortCode" />
+      <PropertyRef Name="BankName" />
+      <PropertyRef Name="BankCode" />
+      <PropertyRef Name="BranchCode" />
+      <PropertyRef Name="BranchName" />
+      <PropertyRef Name="Expr1" />
+    </Key>
+    <Property Name="BankBranchName" Type="nvarchar" Nullable="false" MaxLength="303" />
+    <Property Name="BankSortCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="BankName" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="BankCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="BranchCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="BranchName" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="Expr1" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'sbpayrolldb_november.dbo.vwPayrollMaster' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vwPayrollMaster">
+    <Key>
+      <PropertyRef Name="BankName" />
+      <PropertyRef Name="BranchName" />
+      <PropertyRef Name="BranchCode" />
+      <PropertyRef Name="BankSortCode" />
+      <PropertyRef Name="BankCode" />
+      <PropertyRef Name="Period" />
+      <PropertyRef Name="Year" />
+      <PropertyRef Name="PaymentDate" />
+      <PropertyRef Name="PrintedBy" />
+      <PropertyRef Name="PrintedOn" />
+      <PropertyRef Name="EmpName" />
+      <PropertyRef Name="PayeTax" />
+      <PropertyRef Name="BasicPay" />
+      <PropertyRef Name="Benefits" />
+      <PropertyRef Name="OtherDeductions" />
+      <PropertyRef Name="GrossTaxableEarnings" />
+      <PropertyRef Name="NetTaxableEarnings" />
+      <PropertyRef Name="GrossTax" />
+      <PropertyRef Name="EmployerNSSF" />
+      <PropertyRef Name="PensionEmployee" />
+      <PropertyRef Name="NSSF" />
+      <PropertyRef Name="NHIF" />
+      <PropertyRef Name="NetPay" />
+      <PropertyRef Name="Variables" />
+      <PropertyRef Name="MortgageRelief" />
+      <PropertyRef Name="PersonalRelief" />
+      <PropertyRef Name="PensionEmployer" />
+      <PropertyRef Name="InsuranceRelief" />
+      <PropertyRef Name="EmployeeId" />
+      <PropertyRef Name="EmployerId" />
+    </Key>
+    <Property Name="BankName" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="BranchName" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="Surname" Type="nvarchar" MaxLength="250" />
+    <Property Name="OtherNames" Type="nvarchar" MaxLength="250" />
+    <Property Name="BranchCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="BankSortCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PaymentMode" Type="nvarchar" MaxLength="250" />
+    <Property Name="BankBranchSortCode" Type="nvarchar" MaxLength="250" />
+    <Property Name="BankAccount" Type="nvarchar" MaxLength="250" />
+    <Property Name="IDNo" Type="nvarchar" MaxLength="250" />
+    <Property Name="BankCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Period" Type="int" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="PaymentDate" Type="date" Nullable="false" />
+    <Property Name="PrintedBy" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="PrintedOn" Type="datetime" Nullable="false" />
+    <Property Name="EmpName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="PayPoint" Type="nvarchar" MaxLength="100" />
+    <Property Name="PIN" Type="nvarchar" MaxLength="100" />
+    <Property Name="NHIFNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="Department" Type="nvarchar" MaxLength="100" />
+    <Property Name="NSSFNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="EmpGroup" Type="nvarchar" MaxLength="100" />
+    <Property Name="EmpPayroll" Type="nvarchar" MaxLength="100" />
+    <Property Name="CompName" Type="nvarchar" MaxLength="100" />
+    <Property Name="CompAddr" Type="nvarchar" MaxLength="100" />
+    <Property Name="CompTel" Type="nvarchar" MaxLength="100" />
+    <Property Name="PayeTax" Type="money" Nullable="false" />
+    <Property Name="BasicPay" Type="money" Nullable="false" />
+    <Property Name="Benefits" Type="money" Nullable="false" />
+    <Property Name="OtherDeductions" Type="money" Nullable="false" />
+    <Property Name="GrossTaxableEarnings" Type="money" Nullable="false" />
+    <Property Name="NetTaxableEarnings" Type="money" Nullable="false" />
+    <Property Name="GrossTax" Type="money" Nullable="false" />
+    <Property Name="EmployerNSSF" Type="money" Nullable="false" />
+    <Property Name="PensionEmployee" Type="money" Nullable="false" />
+    <Property Name="BankBranch" Type="nvarchar" MaxLength="100" />
+    <Property Name="Account" Type="nvarchar" MaxLength="100" />
+    <Property Name="NSSF" Type="money" Nullable="false" />
+    <Property Name="NHIF" Type="money" Nullable="false" />
+    <Property Name="NetPay" Type="money" Nullable="false" />
+    <Property Name="EmpNo" Type="nvarchar" MaxLength="250" />
+    <Property Name="Variables" Type="money" Nullable="false" />
+    <Property Name="MortgageRelief" Type="money" Nullable="false" />
+    <Property Name="PersonalRelief" Type="money" Nullable="false" />
+    <Property Name="PensionEmployer" Type="money" Nullable="false" />
+    <Property Name="InsuranceRelief" Type="money" Nullable="false" />
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+    <Property Name="EmployerId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'sbpayrolldb_november.dbo.vwPayrollMaster_Temp' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vwPayrollMaster_Temp">
+    <Key>
+      <PropertyRef Name="Period" />
+      <PropertyRef Name="Year" />
+      <PropertyRef Name="PaymentDate" />
+      <PropertyRef Name="PrintedBy" />
+      <PropertyRef Name="PrintedOn" />
+      <PropertyRef Name="EmpName" />
+      <PropertyRef Name="PayeTax" />
+      <PropertyRef Name="BasicPay" />
+      <PropertyRef Name="Benefits" />
+      <PropertyRef Name="OtherDeductions" />
+      <PropertyRef Name="GrossTaxableEarnings" />
+      <PropertyRef Name="NetTaxableEarnings" />
+      <PropertyRef Name="GrossTax" />
+      <PropertyRef Name="EmployerNSSF" />
+      <PropertyRef Name="PensionEmployee" />
+      <PropertyRef Name="NSSF" />
+      <PropertyRef Name="NHIF" />
+      <PropertyRef Name="NetPay" />
+      <PropertyRef Name="Variables" />
+      <PropertyRef Name="MortgageRelief" />
+      <PropertyRef Name="PersonalRelief" />
+      <PropertyRef Name="PensionEmployer" />
+      <PropertyRef Name="InsuranceRelief" />
+      <PropertyRef Name="EmployeeId" />
+      <PropertyRef Name="EmployerId" />
+    </Key>
+    <Property Name="BankName" Type="nvarchar" MaxLength="150" />
+    <Property Name="BranchName" Type="nvarchar" MaxLength="150" />
+    <Property Name="Surname" Type="nvarchar" MaxLength="250" />
+    <Property Name="OtherNames" Type="nvarchar" MaxLength="250" />
+    <Property Name="BranchCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="BankSortCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="PaymentMode" Type="nvarchar" MaxLength="250" />
+    <Property Name="BankBranchSortCode" Type="nvarchar" MaxLength="250" />
+    <Property Name="BankAccount" Type="nvarchar" MaxLength="250" />
+    <Property Name="IDNo" Type="nvarchar" MaxLength="250" />
+    <Property Name="BankCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="Period" Type="int" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="PaymentDate" Type="date" Nullable="false" />
+    <Property Name="PrintedBy" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="PrintedOn" Type="datetime" Nullable="false" />
+    <Property Name="EmpName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="PayPoint" Type="nvarchar" MaxLength="100" />
+    <Property Name="PIN" Type="nvarchar" MaxLength="100" />
+    <Property Name="NHIFNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="Department" Type="nvarchar" MaxLength="100" />
+    <Property Name="NSSFNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="EmpGroup" Type="nvarchar" MaxLength="100" />
+    <Property Name="EmpPayroll" Type="nvarchar" MaxLength="100" />
+    <Property Name="CompName" Type="nvarchar" MaxLength="100" />
+    <Property Name="CompAddr" Type="nvarchar" MaxLength="100" />
+    <Property Name="CompTel" Type="nvarchar" MaxLength="100" />
+    <Property Name="PayeTax" Type="money" Nullable="false" />
+    <Property Name="BasicPay" Type="money" Nullable="false" />
+    <Property Name="Benefits" Type="money" Nullable="false" />
+    <Property Name="OtherDeductions" Type="money" Nullable="false" />
+    <Property Name="GrossTaxableEarnings" Type="money" Nullable="false" />
+    <Property Name="NetTaxableEarnings" Type="money" Nullable="false" />
+    <Property Name="GrossTax" Type="money" Nullable="false" />
+    <Property Name="EmployerNSSF" Type="money" Nullable="false" />
+    <Property Name="PensionEmployee" Type="money" Nullable="false" />
+    <Property Name="BankBranch" Type="nvarchar" MaxLength="100" />
+    <Property Name="Account" Type="nvarchar" MaxLength="100" />
+    <Property Name="NSSF" Type="money" Nullable="false" />
+    <Property Name="NHIF" Type="money" Nullable="false" />
+    <Property Name="NetPay" Type="money" Nullable="false" />
+    <Property Name="EmpNo" Type="nvarchar" MaxLength="250" />
+    <Property Name="Variables" Type="money" Nullable="false" />
+    <Property Name="MortgageRelief" Type="money" Nullable="false" />
+    <Property Name="PersonalRelief" Type="money" Nullable="false" />
+    <Property Name="PensionEmployer" Type="money" Nullable="false" />
+    <Property Name="InsuranceRelief" Type="money" Nullable="false" />
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+    <Property Name="EmployerId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'sbpayrolldb_november.dbo.vwPayslipDet' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vwPayslipDet">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="ItemId" />
+      <PropertyRef Name="RepayAmount" />
+      <PropertyRef Name="Period" />
+      <PropertyRef Name="PostDate" />
+      <PropertyRef Name="Description" />
+      <PropertyRef Name="DEType" />
+      <PropertyRef Name="EmpTxnId" />
+      <PropertyRef Name="TaxTracking" />
+      <PropertyRef Name="IsStatutory" />
+      <PropertyRef Name="Amount" />
+      <PropertyRef Name="EmployeeId" />
+      <PropertyRef Name="EmployerId" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="EmpNo" Type="nvarchar" MaxLength="250" />
+    <Property Name="Surname" Type="nvarchar" MaxLength="250" />
+    <Property Name="OtherNames" Type="nvarchar" MaxLength="250" />
+    <Property Name="ItemId" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="Balance" Type="money" />
+    <Property Name="ReFField" Type="int" />
+    <Property Name="RepayAmount" Type="money" Nullable="false" />
+    <Property Name="Period" Type="int" Nullable="false" />
+    <Property Name="Year" Type="int" />
+    <Property Name="TxnDate" Type="datetime" />
+    <Property Name="PostDate" Type="date" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="YTD" Type="decimal" />
+    <Property Name="InitialAmount" Type="money" />
+    <Property Name="LoanType" Type="nvarchar" MaxLength="250" />
+    <Property Name="BankAccount" Type="nvarchar" MaxLength="250" />
+    <Property Name="BankCode" Type="nvarchar" MaxLength="250" />
+    <Property Name="PaymentMode" Type="nvarchar" MaxLength="250" />
+    <Property Name="ItemTypeId" Type="nvarchar" MaxLength="10" />
+    <Property Name="DEType" Type="nvarchar" Nullable="false" MaxLength="1" />
+    <Property Name="EmpTxnId" Type="int" Nullable="false" />
+    <Property Name="TaxTracking" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="ShowInPayslip" Type="bit" />
+    <Property Name="IsStatutory" Type="bit" Nullable="false" />
+    <Property Name="Amount" Type="decimal" Nullable="false" />
+    <Property Name="Parent" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="EmployerId" Type="int" Nullable="false" />
+    <Property Name="SystemId" Type="nvarchar" MaxLength="250" />
+    <Property Name="AccumulativePayment" Type="money" />
+    <Property Name="IsLoanRepaymentInFull" Type="bit" />
+    <Property Name="IsSharesRepaymentInCash" Type="bit" />
+    <Property Name="IsLoanRepaymentInCash" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'sbpayrolldb_november.dbo.vwPayslipDet_Temp' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vwPayslipDet_Temp">
+    <Key>
+      <PropertyRef Name="EmployeeId" />
+      <PropertyRef Name="ItemId" />
+      <PropertyRef Name="RepayAmount" />
+      <PropertyRef Name="PostDate" />
+      <PropertyRef Name="EmpTxnId" />
+      <PropertyRef Name="Period" />
+      <PropertyRef Name="Description" />
+      <PropertyRef Name="TaxTracking" />
+      <PropertyRef Name="Amount" />
+      <PropertyRef Name="DEType" />
+      <PropertyRef Name="IsStatutory" />
+      <PropertyRef Name="EmployerId" />
+    </Key>
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+    <Property Name="EmpNo" Type="nvarchar" MaxLength="250" />
+    <Property Name="Surname" Type="nvarchar" MaxLength="250" />
+    <Property Name="OtherNames" Type="nvarchar" MaxLength="250" />
+    <Property Name="ItemId" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="Balance" Type="money" />
+    <Property Name="TxnDate" Type="datetime" />
+    <Property Name="ReFField" Type="int" />
+    <Property Name="RepayAmount" Type="money" Nullable="false" />
+    <Property Name="PostDate" Type="date" Nullable="false" />
+    <Property Name="InitialAmount" Type="money" />
+    <Property Name="LoanType" Type="nvarchar" MaxLength="250" />
+    <Property Name="BankAccount" Type="nvarchar" MaxLength="250" />
+    <Property Name="BankCode" Type="nvarchar" MaxLength="250" />
+    <Property Name="PaymentMode" Type="nvarchar" MaxLength="250" />
+    <Property Name="ItemTypeId" Type="nvarchar" MaxLength="10" />
+    <Property Name="Parent" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmpTxnId" Type="int" Nullable="false" />
+    <Property Name="Period" Type="int" Nullable="false" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="TaxTracking" Type="nchar" Nullable="false" MaxLength="10" />
+    <Property Name="Amount" Type="decimal" Nullable="false" />
+    <Property Name="DEType" Type="nvarchar" Nullable="false" MaxLength="1" />
+    <Property Name="IsStatutory" Type="bit" Nullable="false" />
+    <Property Name="ShowInPayslip" Type="bit" />
+    <Property Name="YTD" Type="decimal" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="EmployerId" Type="int" Nullable="false" />
+    <Property Name="SystemId" Type="nvarchar" MaxLength="250" />
+    <Property Name="AccumulativePayment" Type="money" />
+    <Property Name="IsLoanRepaymentInFull" Type="bit" />
+    <Property Name="IsSharesRepaymentInCash" Type="bit" />
+    <Property Name="IsLoanRepaymentInCash" Type="bit" />
+  </EntityType>
+  <Association Name="FK_BankBranch_Banks">
+    <End Role="Banks" Type="SBPayrollDBEntitiesModel.Store.Banks" Multiplicity="1" />
+    <End Role="BankBranch" Type="SBPayrollDBEntitiesModel.Store.BankBranch" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Banks">
+        <PropertyRef Name="BankCode" />
+      </Principal>
+      <Dependent Role="BankBranch">
+        <PropertyRef Name="BankCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employees_Employers">
+    <End Role="Employers" Type="SBPayrollDBEntitiesModel.Store.Employers" Multiplicity="1" />
+    <End Role="Employees" Type="SBPayrollDBEntitiesModel.Store.Employees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Employees">
+        <PropertyRef Name="EmployerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PayrollItems_TaxTracking">
+    <End Role="TaxTracking" Type="SBPayrollDBEntitiesModel.Store.TaxTracking" Multiplicity="0..1" />
+    <End Role="PayrollItems" Type="SBPayrollDBEntitiesModel.Store.PayrollItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TaxTracking">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PayrollItems">
+        <PropertyRef Name="TaxTrackingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Settings_SettingsGroup">
+    <End Role="SettingsGroup" Type="SBPayrollDBEntitiesModel.Store.SettingsGroup" Multiplicity="1" />
+    <End Role="Settings" Type="SBPayrollDBEntitiesModel.Store.Settings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SettingsGroup">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Settings">
+        <PropertyRef Name="SGroup" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_spAllowedReportsRolesMenus_spReportsMenuItems">
+    <End Role="spReportsMenuItems" Type="SBPayrollDBEntitiesModel.Store.spReportsMenuItems" Multiplicity="1" />
+    <End Role="spAllowedReportsRolesMenus" Type="SBPayrollDBEntitiesModel.Store.spAllowedReportsRolesMenus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="spReportsMenuItems">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="spAllowedReportsRolesMenus">
+        <PropertyRef Name="MenuItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_spAllowedRoleMenus_spMenuItems">
+    <End Role="spMenuItems" Type="SBPayrollDBEntitiesModel.Store.spMenuItems" Multiplicity="1" />
+    <End Role="spAllowedRoleMenus" Type="SBPayrollDBEntitiesModel.Store.spAllowedRoleMenus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="spMenuItems">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="spAllowedRoleMenus">
+        <PropertyRef Name="MenuItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="CopyPayMaster" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="CopyPayslipDet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="fn_diagramobjects" ReturnType="int" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+</Schema>
