@@ -59,6 +59,11 @@ namespace Soft_Books_Activator
         string PAYROLL_SYSTEM_PATH = @"C:\Program Files (x86)\Software Providers\Soft Books Payroll";
         string SACCO_SYSTEM_PATH = @"C:\Program Files (x86)\Software Providers\Soft Books Sacco";
         string SCHOOL_SYSTEM_PATH = @"C:\Program Files (x86)\Software Providers\Soft Books School";
+
+        string DEV_PAYROLL_SYSTEM_PATH = @"D:\wakxpx\csharp\visualstudio\2010\SBPayroll\Build\Debug\Resources";
+        string DEV_SACCO_SYSTEM_PATH = @"D:\wakxpx\csharp\visualstudio\2010\SBSacco\Build\Debug\Resources";
+        string DEV_SCHOOL_SYSTEM_PATH = @"D:\wakxpx\csharp\visualstudio\2010\SBSchool\Build\Debug\Resources";
+
         string RUNTIME = "P";
 
         public main_form()
@@ -96,6 +101,13 @@ namespace Soft_Books_Activator
                 cbosystem.DataSource = _systems;
                 cbosystem.ValueMember = "Key";
                 cbosystem.DisplayMember = "Value";
+
+                var _environment = new BindingList<KeyValuePair<string, string>>();
+                _environment.Add(new KeyValuePair<string, string>("P", "Production"));
+                _environment.Add(new KeyValuePair<string, string>("D", "Development"));
+                cboenvironment.DataSource = _environment;
+                cboenvironment.ValueMember = "Key";
+                cboenvironment.DisplayMember = "Value";
 
                 toolStripProgressBar.Visible = false;
 
@@ -1510,6 +1522,8 @@ namespace Soft_Books_Activator
         {
             try
             {
+                this._notificationmessageEventname.Invoke(this, new notificationmessageEventArgs("activating licence from db...", TAG));
+
                 if (activation_info == null)
                 {
                     activation_info = Utils.get_license_activation_info(selected_system);
@@ -1562,9 +1576,13 @@ namespace Soft_Books_Activator
         {
             try
             {
+                this._notificationmessageEventname.Invoke(this, new notificationmessageEventArgs("activating licence from xml...", TAG));
+
                 string activator_file = "activator.xml";
 
                 string selected_system = cbosystem.SelectedValue.ToString();
+
+                set_system_path();
 
                 string base_directory = string.Empty;
 
@@ -1694,6 +1712,8 @@ namespace Soft_Books_Activator
         {
             try
             {
+                this._notificationmessageEventname.Invoke(this, new notificationmessageEventArgs("activating licence from registry...", TAG));
+
                 if (activation_info == null)
                 {
                     activation_info = Utils.get_license_activation_info(selected_system);
@@ -1823,6 +1843,7 @@ namespace Soft_Books_Activator
             txtusername.Enabled = false;
             txtpassword.Enabled = false;
             cbodatabase.Enabled = false;
+            cboenvironment.Enabled = false;
 
             chkIntegratedSecurity.Enabled = false;
             chkremember.Enabled = false;
@@ -1839,10 +1860,25 @@ namespace Soft_Books_Activator
             txtusername.Enabled = true;
             txtpassword.Enabled = true;
             cbodatabase.Enabled = true;
+            cboenvironment.Enabled = true;
 
             chkIntegratedSecurity.Enabled = true;
             chkremember.Enabled = true;
         }
+
+        private void cboenvironment_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                RUNTIME = cboenvironment.SelectedValue.ToString();
+            }
+            catch (Exception ex)
+            {
+                this._notificationmessageEventname.Invoke(this, new notificationmessageEventArgs(ex.ToString(), TAG));
+                Log.WriteToErrorLogFile_and_EventViewer(ex);
+            }
+        }
+
         private void set_system_path()
         {
             try

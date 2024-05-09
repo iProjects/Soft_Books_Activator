@@ -64,6 +64,8 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cboenvironment = new System.Windows.Forms.ComboBox();
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -84,7 +86,7 @@
             this.lblrunningtime,
             this.toolStripStatusLabel2,
             this.lbltimelapsed});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 504);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 535);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(503, 22);
             this.statusStrip1.TabIndex = 2;
@@ -126,7 +128,7 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(503, 179);
+            this.groupBox1.Size = new System.Drawing.Size(503, 191);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
@@ -139,12 +141,14 @@
             this.txtlog.Location = new System.Drawing.Point(3, 16);
             this.txtlog.Name = "txtlog";
             this.txtlog.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.txtlog.Size = new System.Drawing.Size(497, 160);
+            this.txtlog.Size = new System.Drawing.Size(497, 172);
             this.txtlog.TabIndex = 0;
             this.txtlog.Text = "";
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.cboenvironment);
             this.groupBox2.Controls.Add(this.btn_systems_paths);
             this.groupBox2.Controls.Add(this.chkremember);
             this.groupBox2.Controls.Add(this.btnconnect);
@@ -166,14 +170,14 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(503, 321);
+            this.groupBox2.Size = new System.Drawing.Size(503, 340);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             // 
             // btn_systems_paths
             // 
             this.btn_systems_paths.AutoSize = true;
-            this.btn_systems_paths.Location = new System.Drawing.Point(399, 271);
+            this.btn_systems_paths.Location = new System.Drawing.Point(399, 301);
             this.btn_systems_paths.Name = "btn_systems_paths";
             this.btn_systems_paths.Size = new System.Drawing.Size(73, 13);
             this.btn_systems_paths.TabIndex = 12;
@@ -186,7 +190,7 @@
             this.chkremember.AutoSize = true;
             this.chkremember.Checked = true;
             this.chkremember.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkremember.Location = new System.Drawing.Point(256, 224);
+            this.chkremember.Location = new System.Drawing.Point(265, 254);
             this.chkremember.Name = "chkremember";
             this.chkremember.Size = new System.Drawing.Size(72, 17);
             this.chkremember.TabIndex = 6;
@@ -197,7 +201,7 @@
             // 
             this.btnconnect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnconnect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnconnect.Location = new System.Drawing.Point(70, 260);
+            this.btnconnect.Location = new System.Drawing.Point(79, 290);
             this.btnconnect.Name = "btnconnect";
             this.btnconnect.Size = new System.Drawing.Size(85, 34);
             this.btnconnect.TabIndex = 7;
@@ -208,7 +212,7 @@
             // chkIntegratedSecurity
             // 
             this.chkIntegratedSecurity.AutoSize = true;
-            this.chkIntegratedSecurity.Location = new System.Drawing.Point(70, 224);
+            this.chkIntegratedSecurity.Location = new System.Drawing.Point(79, 254);
             this.chkIntegratedSecurity.Name = "chkIntegratedSecurity";
             this.chkIntegratedSecurity.Size = new System.Drawing.Size(137, 17);
             this.chkIntegratedSecurity.TabIndex = 5;
@@ -220,7 +224,7 @@
             this.btnclose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnclose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnclose.Location = new System.Drawing.Point(274, 260);
+            this.btnclose.Location = new System.Drawing.Point(283, 290);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(75, 34);
             this.btnclose.TabIndex = 9;
@@ -232,7 +236,7 @@
             // 
             this.txtpassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtpassword.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.txtpassword.Location = new System.Drawing.Point(70, 141);
+            this.txtpassword.Location = new System.Drawing.Point(79, 141);
             this.txtpassword.Name = "txtpassword";
             this.txtpassword.PasswordChar = '*';
             this.txtpassword.Size = new System.Drawing.Size(290, 25);
@@ -242,7 +246,7 @@
             // 
             this.btnactivate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnactivate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnactivate.Location = new System.Drawing.Point(177, 260);
+            this.btnactivate.Location = new System.Drawing.Point(186, 290);
             this.btnactivate.Name = "btnactivate";
             this.btnactivate.Size = new System.Drawing.Size(75, 34);
             this.btnactivate.TabIndex = 8;
@@ -254,7 +258,7 @@
             // 
             this.txtusername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtusername.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.txtusername.Location = new System.Drawing.Point(70, 100);
+            this.txtusername.Location = new System.Drawing.Point(79, 100);
             this.txtusername.Name = "txtusername";
             this.txtusername.Size = new System.Drawing.Size(290, 25);
             this.txtusername.TabIndex = 2;
@@ -265,7 +269,7 @@
             this.label4.BackColor = System.Drawing.Color.LimeGreen;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(16, 146);
+            this.label4.Location = new System.Drawing.Point(25, 146);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 13);
             this.label4.TabIndex = 9;
@@ -277,7 +281,7 @@
             this.label5.BackColor = System.Drawing.Color.LimeGreen;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(12, 105);
+            this.label5.Location = new System.Drawing.Point(21, 105);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(56, 13);
             this.label5.TabIndex = 8;
@@ -309,7 +313,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.LimeGreen;
-            this.label3.Location = new System.Drawing.Point(12, 185);
+            this.label3.Location = new System.Drawing.Point(21, 185);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 13);
             this.label3.TabIndex = 5;
@@ -319,7 +323,7 @@
             // 
             this.cbodatabase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbodatabase.FormattingEnabled = true;
-            this.cbodatabase.Location = new System.Drawing.Point(70, 182);
+            this.cbodatabase.Location = new System.Drawing.Point(79, 182);
             this.cbodatabase.Name = "cbodatabase";
             this.cbodatabase.Size = new System.Drawing.Size(290, 21);
             this.cbodatabase.TabIndex = 4;
@@ -327,7 +331,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 66);
+            this.label2.Location = new System.Drawing.Point(36, 66);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 3;
@@ -337,7 +341,7 @@
             // 
             this.cboserver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cboserver.FormattingEnabled = true;
-            this.cboserver.Location = new System.Drawing.Point(70, 63);
+            this.cboserver.Location = new System.Drawing.Point(79, 63);
             this.cboserver.Name = "cboserver";
             this.cboserver.Size = new System.Drawing.Size(290, 21);
             this.cboserver.TabIndex = 1;
@@ -345,7 +349,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 29);
+            this.label1.Location = new System.Drawing.Point(33, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 1;
@@ -356,7 +360,7 @@
             this.cbosystem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbosystem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbosystem.FormattingEnabled = true;
-            this.cbosystem.Location = new System.Drawing.Point(70, 26);
+            this.cbosystem.Location = new System.Drawing.Point(79, 26);
             this.cbosystem.Name = "cbosystem";
             this.cbosystem.Size = new System.Drawing.Size(290, 21);
             this.cbosystem.TabIndex = 0;
@@ -413,9 +417,30 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.groupBox1);
-            this.splitContainer1.Size = new System.Drawing.Size(503, 504);
-            this.splitContainer1.SplitterDistance = 321;
+            this.splitContainer1.Size = new System.Drawing.Size(503, 535);
+            this.splitContainer1.SplitterDistance = 340;
             this.splitContainer1.TabIndex = 3;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.LimeGreen;
+            this.label6.Location = new System.Drawing.Point(11, 224);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(65, 13);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "environment";
+            // 
+            // cboenvironment
+            // 
+            this.cboenvironment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboenvironment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cboenvironment.FormattingEnabled = true;
+            this.cboenvironment.Location = new System.Drawing.Point(79, 221);
+            this.cboenvironment.Name = "cboenvironment";
+            this.cboenvironment.Size = new System.Drawing.Size(290, 21);
+            this.cboenvironment.TabIndex = 13;
+            this.cboenvironment.SelectedIndexChanged += new System.EventHandler(this.cboenvironment_SelectedIndexChanged);
             // 
             // main_form
             // 
@@ -424,7 +449,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LimeGreen;
             this.CancelButton = this.btnclose;
-            this.ClientSize = new System.Drawing.Size(503, 526);
+            this.ClientSize = new System.Drawing.Size(503, 557);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.statusStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -484,6 +509,8 @@
         private System.Windows.Forms.CheckBox chkremember;
         private System.Windows.Forms.LinkLabel btn_systems_paths;
         private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cboenvironment;
     }
 }
 

@@ -56,3 +56,4 @@ D:\wakxpx\csharp\visualstudio\2010\Soft_Books_Activator\Soft_Books_Activator\bin
 D:\wakxpx\csharp\visualstudio\2010\Soft_Books_Activator\Soft_Books_Activator\bin\Debug\Microsoft.SqlServer.Types.dll
 D:\wakxpx\csharp\visualstudio\2010\Soft_Books_Activator\Soft_Books_Activator\bin\Debug\Microsoft.SqlServer.VSTAScriptingLib.dll
 D:\wakxpx\csharp\visualstudio\2010\Soft_Books_Activator\Soft_Books_Activator\bin\Debug\Microsoft.SqlServer.WmiEnum.dll
+D:\wakxpx\csharp\visualstudio\2010\Soft_Books_Activator\Soft_Books_Activator\obj\x86\Debug\Soft_Books_Activator.csprojResolveAssemblyReference.cache

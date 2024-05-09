@@ -108,3 +108,200 @@ Whole Exception:System.Data.EntityCommandExecutionException: An error occurred w
    at Soft_Books_Activator.main_form.activate_from_database() in D:\wakxpx\csharp\visualstudio\2010\Soft_Books_Activator\Soft_Books_Activator\main_form.cs:line 1520
 ==================================================================
 
+==================================================================
+ERROR OCCOURED AT :28/04/2024 18:02:11 PM
+SOURCE:System.Data
+MESSAGE:There is no row at position 3.
+Whole Exception:System.IndexOutOfRangeException: There is no row at position 3.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Soft_Books_Activator.main_form.save_auto_complete_login() in D:\wakxpx\csharp\visualstudio\2010\Soft_Books_Activator\Soft_Books_Activator\main_form.cs:line 1361
+==================================================================
+
+==================================================================
+ERROR OCCOURED AT :28/04/2024 18:02:11 PM
+SOURCE:System.Data
+MESSAGE:There is no row at position 4.
+Whole Exception:System.IndexOutOfRangeException: There is no row at position 4.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Soft_Books_Activator.main_form.save_auto_complete_login() in D:\wakxpx\csharp\visualstudio\2010\Soft_Books_Activator\Soft_Books_Activator\main_form.cs:line 1361
+==================================================================
+
+==================================================================
+ERROR OCCOURED AT :28/04/2024 18:02:11 PM
+SOURCE:System.Data
+MESSAGE:There is no row at position 5.
+Whole Exception:System.IndexOutOfRangeException: There is no row at position 5.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Soft_Books_Activator.main_form.save_auto_complete_login() in D:\wakxpx\csharp\visualstudio\2010\Soft_Books_Activator\Soft_Books_Activator\main_form.cs:line 1361
+==================================================================
+
+==================================================================
+ERROR OCCOURED AT :28/04/2024 19:01:01 PM
+SOURCE:System.Data
+MESSAGE:There is no row at position 2.
+Whole Exception:System.IndexOutOfRangeException: There is no row at position 2.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Soft_Books_Activator.main_form.save_auto_complete_login() in D:\wakxpx\csharp\visualstudio\2010\Soft_Books_Activator\Soft_Books_Activator\main_form.cs:line 1373
+==================================================================
+
+==================================================================
+ERROR OCCOURED AT :28/04/2024 19:01:01 PM
+SOURCE:System.Data
+MESSAGE:There is no row at position 3.
+Whole Exception:System.IndexOutOfRangeException: There is no row at position 3.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Soft_Books_Activator.main_form.save_auto_complete_login() in D:\wakxpx\csharp\visualstudio\2010\Soft_Books_Activator\Soft_Books_Activator\main_form.cs:line 1373
+==================================================================
+
+==================================================================
+ERROR OCCOURED AT :28/04/2024 19:01:17 PM
+SOURCE:System.Data
+MESSAGE:There is no row at position 2.
+Whole Exception:System.IndexOutOfRangeException: There is no row at position 2.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Soft_Books_Activator.main_form.save_auto_complete_login() in D:\wakxpx\csharp\visualstudio\2010\Soft_Books_Activator\Soft_Books_Activator\main_form.cs:line 1373
+==================================================================
+
+==================================================================
+ERROR OCCOURED AT :28/04/2024 19:04:43 PM
+SOURCE:System.Data
+MESSAGE:There is no row at position 1.
+Whole Exception:System.IndexOutOfRangeException: There is no row at position 1.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Soft_Books_Activator.main_form.save_auto_complete_login() in D:\wakxpx\csharp\visualstudio\2010\Soft_Books_Activator\Soft_Books_Activator\main_form.cs:line 1373
+==================================================================
+
+==================================================================
+ERROR OCCOURED AT :28/04/2024 19:09:42 PM
+SOURCE:System.Data.Entity
+MESSAGE:An error occurred while executing the command definition. See the inner exception for details.
+Whole Exception:System.Data.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: The data types text and varchar are incompatible in the equal to operator.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<>c__11`1.<GetElementFunction>b__11_1(IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Soft_Books_Activator.main_form.activate_from_database() in D:\wakxpx\csharp\visualstudio\2010\Soft_Books_Activator\Soft_Books_Activator\main_form.cs:line 1532
+==================================================================
+
+==================================================================
+ERROR OCCOURED AT :28/04/2024 19:23:24 PM
+SOURCE:System.Data.Entity
+MESSAGE:An error occurred while executing the command definition. See the inner exception for details.
+Whole Exception:System.Data.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: The data types text and varchar are incompatible in the equal to operator.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<>c__11`1.<GetElementFunction>b__11_1(IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Soft_Books_Activator.main_form.activate_from_database() in D:\wakxpx\csharp\visualstudio\2010\Soft_Books_Activator\Soft_Books_Activator\main_form.cs:line 1534
+==================================================================
+
+==================================================================
+ERROR OCCOURED AT :28/04/2024 19:24:06 PM
+SOURCE:System.Data
+MESSAGE:There is no row at position 1.
+Whole Exception:System.IndexOutOfRangeException: There is no row at position 1.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Soft_Books_Activator.main_form.save_auto_complete_login() in D:\wakxpx\csharp\visualstudio\2010\Soft_Books_Activator\Soft_Books_Activator\main_form.cs:line 1373
+==================================================================
+
+==================================================================
+ERROR OCCOURED AT :28/04/2024 19:24:08 PM
+SOURCE:System.Data.Entity
+MESSAGE:An error occurred while executing the command definition. See the inner exception for details.
+Whole Exception:System.Data.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: The data types text and varchar are incompatible in the equal to operator.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<>c__11`1.<GetElementFunction>b__11_1(IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Soft_Books_Activator.main_form.activate_from_database() in D:\wakxpx\csharp\visualstudio\2010\Soft_Books_Activator\Soft_Books_Activator\main_form.cs:line 1534
+==================================================================
+
+==================================================================
+ERROR OCCOURED AT :28/04/2024 19:31:45 PM
+SOURCE:System.Data.Entity
+MESSAGE:Unable to load the specified metadata resource.
+Whole Exception:System.Data.MetadataException: Unable to load the specified metadata resource.
+   at System.Data.Metadata.Edm.MetadataArtifactLoaderCompositeResource.LoadResources(String assemblyName, String resourceName, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Metadata.Edm.MetadataArtifactLoaderCompositeResource..ctor(String originalPath, String assemblyName, String resourceName, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Metadata.Edm.MetadataArtifactLoaderCompositeResource.CreateResourceLoader(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Metadata.Edm.MetadataArtifactLoader.Create(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Metadata.Edm.MetadataCache.SplitPaths(String paths)
+   at System.Data.Common.Utils.Memoizer`2.<>c__DisplayClass4_0.<Evaluate>b__0()
+   at System.Data.Common.Utils.Memoizer`2.Result.GetValue()
+   at System.Data.Common.Utils.Memoizer`2.Evaluate(TArg arg)
+   at System.Data.EntityClient.EntityConnection.GetMetadataWorkspace(Boolean initializeAllCollections)
+   at System.Data.Objects.ObjectContext.RetrieveMetadataWorkspaceFromConnection()
+   at System.Data.Objects.ObjectContext..ctor(EntityConnection connection, Boolean isConnectionConstructor)
+   at System.Data.Objects.ObjectContext..ctor(EntityConnection connection, String defaultContainerName)
+   at Soft_Books_Activator.DBEntities..ctor(EntityConnection connection) in D:\wakxpx\csharp\visualstudio\2010\Soft_Books_Activator\Soft_Books_Activator\DBEntities.Designer.cs:line 63
+   at Soft_Books_Activator.main_form.bgWorker_DoWork(Object sender, DoWorkEventArgs e) in D:\wakxpx\csharp\visualstudio\2010\Soft_Books_Activator\Soft_Books_Activator\main_form.cs:line 928
+==================================================================
+

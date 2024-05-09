@@ -1,0 +1,1175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SBPayrollDBEntitiesModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="SBPayrollDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Accounts" EntityType="SBPayrollDBEntitiesModel.Account" />
+    <EntitySet Name="BankBranches" EntityType="SBPayrollDBEntitiesModel.BankBranch" />
+    <EntitySet Name="Banks" EntityType="SBPayrollDBEntitiesModel.Bank" />
+    <EntitySet Name="Benefits" EntityType="SBPayrollDBEntitiesModel.Benefit" />
+    <EntitySet Name="DeductionsTrackers" EntityType="SBPayrollDBEntitiesModel.DeductionsTracker" />
+    <EntitySet Name="Departments" EntityType="SBPayrollDBEntitiesModel.Department" />
+    <EntitySet Name="Employee_Ext" EntityType="SBPayrollDBEntitiesModel.Employee_Ext" />
+    <EntitySet Name="Employee_Ext_Fields" EntityType="SBPayrollDBEntitiesModel.Employee_Ext_Fields" />
+    <EntitySet Name="Employees" EntityType="SBPayrollDBEntitiesModel.Employee" />
+    <EntitySet Name="EmployeesBankTransfers" EntityType="SBPayrollDBEntitiesModel.EmployeesBankTransfer" />
+    <EntitySet Name="EmployeeTransactions" EntityType="SBPayrollDBEntitiesModel.EmployeeTransaction" />
+    <EntitySet Name="EmployerBanks" EntityType="SBPayrollDBEntitiesModel.EmployerBank" />
+    <EntitySet Name="Employers" EntityType="SBPayrollDBEntitiesModel.Employer" />
+    <EntitySet Name="EmpNonCashBenefits" EntityType="SBPayrollDBEntitiesModel.EmpNonCashBenefit" />
+    <EntitySet Name="HourlyPayments" EntityType="SBPayrollDBEntitiesModel.HourlyPayment" />
+    <EntitySet Name="LeaveTransactions" EntityType="SBPayrollDBEntitiesModel.LeaveTransaction" />
+    <EntitySet Name="NHIFRates" EntityType="SBPayrollDBEntitiesModel.NHIFRate" />
+    <EntitySet Name="PackedTransactions" EntityType="SBPayrollDBEntitiesModel.PackedTransaction" />
+    <EntitySet Name="PayeeRates" EntityType="SBPayrollDBEntitiesModel.PayeeRate" />
+    <EntitySet Name="PayrollItems" EntityType="SBPayrollDBEntitiesModel.PayrollItem" />
+    <EntitySet Name="PayrollItemTypes" EntityType="SBPayrollDBEntitiesModel.PayrollItemType" />
+    <EntitySet Name="Payrolls" EntityType="SBPayrollDBEntitiesModel.Payroll" />
+    <EntitySet Name="PayrollTypes" EntityType="SBPayrollDBEntitiesModel.PayrollType" />
+    <EntitySet Name="PayslipDets" EntityType="SBPayrollDBEntitiesModel.PayslipDet" />
+    <EntitySet Name="PayslipDet_Temp" EntityType="SBPayrollDBEntitiesModel.PayslipDet_Temp" />
+    <EntitySet Name="PayslipMasters" EntityType="SBPayrollDBEntitiesModel.PayslipMaster" />
+    <EntitySet Name="PayslipMaster_Temp" EntityType="SBPayrollDBEntitiesModel.PayslipMaster_Temp" />
+    <EntitySet Name="Settings" EntityType="SBPayrollDBEntitiesModel.Setting" />
+    <EntitySet Name="SettingsGroups" EntityType="SBPayrollDBEntitiesModel.SettingsGroup" />
+    <EntitySet Name="spAllowedReportsRolesMenus" EntityType="SBPayrollDBEntitiesModel.spAllowedReportsRolesMenu" />
+    <EntitySet Name="spAllowedRoleMenus" EntityType="SBPayrollDBEntitiesModel.spAllowedRoleMenu" />
+    <EntitySet Name="spAllowedRoleMenuswebs" EntityType="SBPayrollDBEntitiesModel.spAllowedRoleMenusweb" />
+    <EntitySet Name="spMenuItems" EntityType="SBPayrollDBEntitiesModel.spMenuItem" />
+    <EntitySet Name="spMenus" EntityType="SBPayrollDBEntitiesModel.spMenu" />
+    <EntitySet Name="spReportsMenuItems" EntityType="SBPayrollDBEntitiesModel.spReportsMenuItem" />
+    <EntitySet Name="spRoles" EntityType="SBPayrollDBEntitiesModel.spRole" />
+    <EntitySet Name="spUsers" EntityType="SBPayrollDBEntitiesModel.spUser" />
+    <EntitySet Name="spUsersInRoles" EntityType="SBPayrollDBEntitiesModel.spUsersInRole" />
+    <EntitySet Name="sysdiagrams" EntityType="SBPayrollDBEntitiesModel.sysdiagram" />
+    <EntitySet Name="TaxTrackings" EntityType="SBPayrollDBEntitiesModel.TaxTracking" />
+    <EntitySet Name="tbl_LAS" EntityType="SBPayrollDBEntitiesModel.tbl_LAS" />
+    <EntitySet Name="TechParams" EntityType="SBPayrollDBEntitiesModel.TechParam" />
+    <EntitySet Name="TransactionDefs" EntityType="SBPayrollDBEntitiesModel.TransactionDef" />
+    <EntitySet Name="Transactions" EntityType="SBPayrollDBEntitiesModel.Transaction" />
+    <EntitySet Name="TxnTypes" EntityType="SBPayrollDBEntitiesModel.TxnType" />
+    <EntitySet Name="UserProfiles" EntityType="SBPayrollDBEntitiesModel.UserProfile" />
+    <EntitySet Name="webpages_Membership" EntityType="SBPayrollDBEntitiesModel.webpages_Membership" />
+    <EntitySet Name="webpages_OAuthMembership" EntityType="SBPayrollDBEntitiesModel.webpages_OAuthMembership" />
+    <EntitySet Name="webpages_Roles" EntityType="SBPayrollDBEntitiesModel.webpages_Roles" />
+    <EntitySet Name="webpages_UsersInRoles" EntityType="SBPayrollDBEntitiesModel.webpages_UsersInRoles" />
+    <EntitySet Name="GetEmpTransactions" EntityType="SBPayrollDBEntitiesModel.GetEmpTransaction" />
+    <EntitySet Name="vwBankBranches" EntityType="SBPayrollDBEntitiesModel.vwBankBranch" />
+    <EntitySet Name="vwPayrollMasters" EntityType="SBPayrollDBEntitiesModel.vwPayrollMaster" />
+    <EntitySet Name="vwPayrollMaster_Temp" EntityType="SBPayrollDBEntitiesModel.vwPayrollMaster_Temp" />
+    <EntitySet Name="vwPayslipDets" EntityType="SBPayrollDBEntitiesModel.vwPayslipDet" />
+    <EntitySet Name="vwPayslipDet_Temp" EntityType="SBPayrollDBEntitiesModel.vwPayslipDet_Temp" />
+    <AssociationSet Name="FK_BankBranch_Banks" Association="SBPayrollDBEntitiesModel.FK_BankBranch_Banks">
+      <End Role="Bank" EntitySet="Banks" />
+      <End Role="BankBranch" EntitySet="BankBranches" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employees_Employers" Association="SBPayrollDBEntitiesModel.FK_Employees_Employers">
+      <End Role="Employer" EntitySet="Employers" />
+      <End Role="Employee" EntitySet="Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PayrollItems_TaxTracking" Association="SBPayrollDBEntitiesModel.FK_PayrollItems_TaxTracking">
+      <End Role="TaxTracking" EntitySet="TaxTrackings" />
+      <End Role="PayrollItem" EntitySet="PayrollItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Settings_SettingsGroup" Association="SBPayrollDBEntitiesModel.FK_Settings_SettingsGroup">
+      <End Role="SettingsGroup" EntitySet="SettingsGroups" />
+      <End Role="Setting" EntitySet="Settings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_spAllowedReportsRolesMenus_spReportsMenuItems" Association="SBPayrollDBEntitiesModel.FK_spAllowedReportsRolesMenus_spReportsMenuItems">
+      <End Role="spReportsMenuItem" EntitySet="spReportsMenuItems" />
+      <End Role="spAllowedReportsRolesMenu" EntitySet="spAllowedReportsRolesMenus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_spAllowedRoleMenus_spMenuItems" Association="SBPayrollDBEntitiesModel.FK_spAllowedRoleMenus_spMenuItems">
+      <End Role="spMenuItem" EntitySet="spMenuItems" />
+      <End Role="spAllowedRoleMenu" EntitySet="spAllowedRoleMenus" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="EmpNo" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="AccountType" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="BookBalance" Nullable="false" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="BankBranch">
+    <Key>
+      <PropertyRef Name="BankSortCode" />
+    </Key>
+    <Property Type="String" Name="BankSortCode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BranchCode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BranchName" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BankCode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Bank" Relationship="SBPayrollDBEntitiesModel.FK_BankBranch_Banks" FromRole="BankBranch" ToRole="Bank" />
+  </EntityType>
+  <EntityType Name="Bank">
+    <Key>
+      <PropertyRef Name="BankCode" />
+    </Key>
+    <Property Type="String" Name="BankCode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BankName" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="BankBranches" Relationship="SBPayrollDBEntitiesModel.FK_BankBranch_Banks" FromRole="Bank" ToRole="BankBranch" />
+  </EntityType>
+  <EntityType Name="Benefit">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Description" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Rate" Precision="19" Scale="4" />
+    <Property Type="Boolean" Name="IsDeleted" />
+  </EntityType>
+  <EntityType Name="DeductionsTracker">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="PayrollItemId" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ItemTypeDescription" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="LoanYTD" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="SaccoYTD" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="Amount" Precision="18" Scale="0" />
+    <Property Type="String" Name="EmployeeName" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="EmployeeId" />
+    <Property Type="Int32" Name="EmployeeTransactionId" />
+    <Property Type="Int32" Name="Year" />
+    <Property Type="Int32" Name="Term" />
+    <Property Type="Boolean" Name="IsProcessed" />
+    <Property Type="Boolean" Name="IsClosed" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Code" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsDeleted" />
+  </EntityType>
+  <EntityType Name="Employee_Ext">
+    <Key>
+      <PropertyRef Name="EmpNo" />
+      <PropertyRef Name="ExFieldName" />
+    </Key>
+    <Property Type="String" Name="EmpNo" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="ExFieldName" Nullable="false" />
+    <Property Type="String" Name="ExFieldStr" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ExFieldInt" />
+    <Property Type="DateTime" Name="ExFieldDate" />
+    <Property Type="Decimal" Name="ExFieldDecimal" Precision="18" Scale="0" />
+    <Property Type="Int32" Name="EmployerId" />
+  </EntityType>
+  <EntityType Name="Employee_Ext_Fields">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FType" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="EmpNo" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Surname" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="OtherNames" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DoB" />
+    <Property Type="String" Name="MaritalStatus" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Gender" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Photo" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DoE" />
+    <Property Type="String" Name="BasicComputation" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="BasicPay" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="PersonalRelief" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="MortgageRelief" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="InsuranceRelief" Precision="19" Scale="4" />
+    <Property Type="String" Name="NSSFNo" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NHIFNo" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="IDNo" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PINNo" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="DepartmentId" />
+    <Property Type="Int32" Name="EmployerId" Nullable="false" />
+    <Property Type="String" Name="PayPoint" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmpGroup" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmpPayroll" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PrevEmployer" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateLeft" />
+    <Property Type="String" Name="PaymentMode" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TelephoneNo" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ChequeNo" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BankCode" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BankAccount" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LeaveBalance" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsActive" />
+    <Property Type="String" Name="CreatedBy" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedOn" />
+    <Property Type="Boolean" Name="IsDeleted" />
+    <Property Type="String" Name="SystemId" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsDisabled" />
+    <Property Type="String" Name="MpesaReferenceNo" MaxLength="250" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Employer" Relationship="SBPayrollDBEntitiesModel.FK_Employees_Employers" FromRole="Employee" ToRole="Employer" />
+  </EntityType>
+  <EntityType Name="EmployeesBankTransfer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="EmpNo" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BankSortCode" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="EmployerBankId" />
+    <Property Type="Int32" Name="EmployerId" />
+    <Property Type="Int32" Name="EmployeeId" />
+  </EntityType>
+  <EntityType Name="EmployeeTransaction">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="PostDate" Nullable="false" />
+    <Property Type="String" Name="EmpNo" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="EmployeeId" Nullable="false" />
+    <Property Type="Boolean" Name="Enabled" Nullable="false" />
+    <Property Type="Boolean" Name="Recurrent" Nullable="false" />
+    <Property Type="String" Name="ItemId" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Amount" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="Balance" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="InitialAmount" Precision="19" Scale="4" />
+    <Property Type="Boolean" Name="Processed" />
+    <Property Type="Boolean" Name="TrackYTD" />
+    <Property Type="Boolean" Name="ShowYTDInPayslip" />
+    <Property Type="String" Name="CreatedBy" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastChangedBy" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastChangeDate" />
+    <Property Type="String" Name="AuthorizedBy" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="AuthorizeDate" />
+    <Property Type="String" Name="LoanType" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="AccumulativePayment" Precision="19" Scale="4" />
+    <Property Type="Boolean" Name="IsDeleted" />
+    <Property Type="Boolean" Name="IsLoanRepaymentInFull" />
+    <Property Type="Int32" Name="LoanBeingRepayedId" />
+    <Property Type="Int32" Name="SaccoBeingRepayedId" />
+    <Property Type="Boolean" Name="IsLoanRepaymentInCash" />
+    <Property Type="Boolean" Name="IsSharesRepaymentInCash" />
+  </EntityType>
+  <EntityType Name="EmployerBank">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="EmployerId" />
+    <Property Type="String" Name="BankSortCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AccountName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AccountNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Signatory" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsDefault" />
+  </EntityType>
+  <EntityType Name="Employer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Telephone" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Address1" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Address2" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Slogan" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AuthorizedSignatory" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PIN" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NHIF" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NSSF" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BankBranchSortCode" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AccountName" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AccountNo" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Logo" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsDefault" />
+    <Property Type="Boolean" Name="IsActive" />
+    <Property Type="Boolean" Name="IsDeleted" />
+    <NavigationProperty Name="Employees" Relationship="SBPayrollDBEntitiesModel.FK_Employees_Employers" FromRole="Employer" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="EmpNonCashBenefit">
+    <Key>
+      <PropertyRef Name="EmpNo" />
+      <PropertyRef Name="BenefitId" />
+    </Key>
+    <Property Type="Int32" Name="EmployeeId" Nullable="false" />
+    <Property Type="String" Name="EmpNo" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="BenefitId" Nullable="false" />
+    <Property Type="Int32" Name="Quantity" Nullable="false" />
+    <Property Type="Decimal" Name="Rate" Nullable="false" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="HourlyPayment">
+    <Key>
+      <PropertyRef Name="Empno" />
+      <PropertyRef Name="WorkDate" />
+    </Key>
+    <Property Type="Int32" Name="EmployeeId" Nullable="false" />
+    <Property Type="String" Name="Empno" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="DateTime" Name="WorkDate" Nullable="false" />
+    <Property Type="Int32" Name="WorkHours" Nullable="false" />
+    <Property Type="Decimal" Name="RatePerHour" Nullable="false" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="LeaveTransaction">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="DateTime" Name="PostDate" />
+    <Property Type="DateTime" Name="EffectiveDate" />
+    <Property Type="String" Name="LeaveDesc" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="NoofDays" />
+  </EntityType>
+  <EntityType Name="NHIFRate">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Decimal" Name="FromAmt" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="ToAmt" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="Rate" Nullable="false" Precision="10" Scale="4" />
+  </EntityType>
+  <EntityType Name="PackedTransaction">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="PackDate" Nullable="false" />
+    <Property Type="String" Name="EmpNo" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="EmployeeId" Nullable="false" />
+    <Property Type="String" Name="TxnCode" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="Decimal" Name="Amount" Nullable="false" Precision="10" Scale="4" />
+    <Property Type="String" Name="CreatedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="Authorized" />
+  </EntityType>
+  <EntityType Name="PayeeRate">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Decimal" Name="FromAmt" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="ToAmt" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="Rate" Nullable="false" Precision="10" Scale="4" />
+  </EntityType>
+  <EntityType Name="PayrollItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="String" Name="Id" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ItemTypeId" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TaxTrackingId" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PayableTo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="GLAccount" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ReFField" />
+    <Property Type="Boolean" Name="DefaultItem" />
+    <Property Type="Boolean" Name="AddToPension" />
+    <Property Type="Boolean" Name="Active" />
+    <Property Type="Boolean" Name="Enable" />
+    <Property Type="Boolean" Name="IsDeleted" />
+    <NavigationProperty Name="TaxTracking" Relationship="SBPayrollDBEntitiesModel.FK_PayrollItems_TaxTracking" FromRole="PayrollItem" ToRole="TaxTracking" />
+  </EntityType>
+  <EntityType Name="PayrollItemType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="String" Name="Id" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Parent" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Status" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsDefault" />
+  </EntityType>
+  <EntityType Name="Payroll">
+    <Key>
+      <PropertyRef Name="Period" />
+      <PropertyRef Name="Year" />
+      <PropertyRef Name="EmployerId" />
+    </Key>
+    <Property Type="Int32" Name="Period" Nullable="false" />
+    <Property Type="Int32" Name="Year" Nullable="false" />
+    <Property Type="Int32" Name="EmployerId" Nullable="false" />
+    <Property Type="DateTime" Name="DateRun" />
+    <Property Type="String" Name="RunBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="Approved" />
+    <Property Type="String" Name="ApprovedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsOpen" Nullable="false" />
+    <Property Type="Boolean" Name="Processed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PayrollType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Description" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Remarks" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="PayslipDet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="EmpNo" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="EmployeeId" Nullable="false" />
+    <Property Type="Int32" Name="EmployerId" />
+    <Property Type="Int32" Name="EmpTxnId" Nullable="false" />
+    <Property Type="Int32" Name="Period" Nullable="false" />
+    <Property Type="Int32" Name="Year" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TaxTracking" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Amount" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="DEType" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsStatutory" Nullable="false" />
+    <Property Type="Boolean" Name="ShowInPayslip" />
+    <Property Type="Decimal" Name="YTD" Precision="18" Scale="0" />
+    <Property Type="Boolean" Name="IsLoanRepaymentInCash" />
+    <Property Type="Boolean" Name="IsSharesRepaymentInCash" />
+  </EntityType>
+  <EntityType Name="PayslipDet_Temp">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="EmpNo" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="EmployeeId" Nullable="false" />
+    <Property Type="Int32" Name="EmployerId" />
+    <Property Type="Int32" Name="EmpTxnId" Nullable="false" />
+    <Property Type="Int32" Name="Period" Nullable="false" />
+    <Property Type="Int32" Name="Year" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TaxTracking" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="Decimal" Name="Amount" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="DEType" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsStatutory" Nullable="false" />
+    <Property Type="Boolean" Name="ShowInPayslip" />
+    <Property Type="Decimal" Name="YTD" Precision="18" Scale="0" />
+    <Property Type="Boolean" Name="IsLoanRepaymentInCash" />
+    <Property Type="Boolean" Name="IsSharesRepaymentInCash" />
+  </EntityType>
+  <EntityType Name="PayslipMaster">
+    <Key>
+      <PropertyRef Name="Period" />
+      <PropertyRef Name="Year" />
+      <PropertyRef Name="EmpNo" />
+    </Key>
+    <Property Type="Int32" Name="Period" Nullable="false" />
+    <Property Type="Int32" Name="Year" Nullable="false" />
+    <Property Type="String" Name="EmpNo" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="EmployeeId" Nullable="false" />
+    <Property Type="Int32" Name="EmployerId" />
+    <Property Type="DateTime" Name="PaymentDate" Nullable="false" />
+    <Property Type="String" Name="PrintedBy" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="PrintedOn" Nullable="false" />
+    <Property Type="String" Name="EmpName" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PayPoint" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PIN" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NHIFNo" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NSSFNo" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Department" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmpGroup" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmpPayroll" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CompName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CompAddr" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CompTel" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="PayeTax" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="BasicPay" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="Benefits" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="Variables" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="OtherDeductions" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="GrossTaxableEarnings" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="NetTaxableEarnings" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="MortgageRelief" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="InsuranceRelief" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="GrossTax" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="PersonalRelief" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="PensionEmployer" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="EmployerNSSF" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="PensionEmployee" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="String" Name="BankBranch" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Account" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="NSSF" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="NHIF" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="NetPay" Nullable="false" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="PayslipMaster_Temp">
+    <Key>
+      <PropertyRef Name="Period" />
+      <PropertyRef Name="Year" />
+      <PropertyRef Name="EmpNo" />
+    </Key>
+    <Property Type="Int32" Name="Period" Nullable="false" />
+    <Property Type="Int32" Name="Year" Nullable="false" />
+    <Property Type="String" Name="EmpNo" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="EmployeeId" Nullable="false" />
+    <Property Type="Int32" Name="EmployerId" />
+    <Property Type="DateTime" Name="PaymentDate" Nullable="false" />
+    <Property Type="String" Name="PrintedBy" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="PrintedOn" Nullable="false" />
+    <Property Type="String" Name="EmpName" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PayPoint" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PIN" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NHIFNo" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NSSFNo" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Department" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmpGroup" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmpPayroll" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CompName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CompAddr" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CompTel" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="PayeTax" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="BasicPay" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="Benefits" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="Variables" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="OtherDeductions" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="GrossTaxableEarnings" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="NetTaxableEarnings" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="MortgageRelief" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="InsuranceRelief" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="GrossTax" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="PersonalRelief" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="PensionEmployer" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="EmployerNSSF" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="PensionEmployee" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="String" Name="BankBranch" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Account" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="NSSF" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="NHIF" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="NetPay" Nullable="false" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="Setting">
+    <Key>
+      <PropertyRef Name="SSKey" />
+    </Key>
+    <Property Type="String" Name="SSKey" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SSValue" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SSValueType" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="SGroup" Nullable="false" />
+    <Property Type="Boolean" Name="SSSystem" Nullable="false" />
+    <NavigationProperty Name="SettingsGroup" Relationship="SBPayrollDBEntitiesModel.FK_Settings_SettingsGroup" FromRole="Setting" ToRole="SettingsGroup" />
+  </EntityType>
+  <EntityType Name="SettingsGroup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="GroupName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Parent" Nullable="false" />
+    <NavigationProperty Name="Settings" Relationship="SBPayrollDBEntitiesModel.FK_Settings_SettingsGroup" FromRole="SettingsGroup" ToRole="Setting" />
+  </EntityType>
+  <EntityType Name="spAllowedReportsRolesMenu">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="RoleId" Nullable="false" />
+    <Property Type="Int32" Name="MenuItemId" Nullable="false" />
+    <Property Type="Boolean" Name="Allowed" Nullable="false" />
+    <NavigationProperty Name="spReportsMenuItem" Relationship="SBPayrollDBEntitiesModel.FK_spAllowedReportsRolesMenus_spReportsMenuItems" FromRole="spAllowedReportsRolesMenu" ToRole="spReportsMenuItem" />
+  </EntityType>
+  <EntityType Name="spAllowedRoleMenu">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="RoleId" Nullable="false" />
+    <Property Type="Int32" Name="MenuItemId" Nullable="false" />
+    <Property Type="Boolean" Name="Allowed" Nullable="false" />
+    <NavigationProperty Name="spMenuItem" Relationship="SBPayrollDBEntitiesModel.FK_spAllowedRoleMenus_spMenuItems" FromRole="spAllowedRoleMenu" ToRole="spMenuItem" />
+  </EntityType>
+  <EntityType Name="spAllowedRoleMenusweb">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="RoleId" />
+    <Property Type="Int32" Name="MenuItemId" />
+    <Property Type="Boolean" Name="Allowed" />
+  </EntityType>
+  <EntityType Name="spMenuItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="mnuName" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="spAllowedRoleMenus" Relationship="SBPayrollDBEntitiesModel.FK_spAllowedRoleMenus_spMenuItems" FromRole="spMenuItem" ToRole="spAllowedRoleMenu" />
+  </EntityType>
+  <EntityType Name="spMenu">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="mnuName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="spReportsMenuItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="mnuName" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="spAllowedReportsRolesMenus" Relationship="SBPayrollDBEntitiesModel.FK_spAllowedReportsRolesMenus_spReportsMenuItems" FromRole="spReportsMenuItem" ToRole="spAllowedReportsRolesMenu" />
+  </EntityType>
+  <EntityType Name="spRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ShortCode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+  </EntityType>
+  <EntityType Name="spUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="RoleId" Nullable="false" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Password" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Status" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="Locked" Nullable="false" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+    <Property Type="String" Name="SystemId" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Surname" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="OtherNames" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NationalID" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateOfBirth" />
+    <Property Type="String" Name="Gender" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Telephone" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateJoined" />
+    <Property Type="String" Name="InformBy" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Photo" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="password_hash" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="password_salt" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="spUsersInRole">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <Property Type="Int32" Name="RoleId" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Type="String" Name="name" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="principal_id" Nullable="false" />
+    <Property Type="Int32" Name="diagram_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="version" />
+    <Property Type="Binary" Name="definition" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TaxTracking">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="String" Name="Id" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Status" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="Boolean" Name="IsDefault" />
+    <NavigationProperty Name="PayrollItems" Relationship="SBPayrollDBEntitiesModel.FK_PayrollItems_TaxTracking" FromRole="TaxTracking" ToRole="PayrollItem" />
+  </EntityType>
+  <EntityType Name="tbl_LAS">
+    <Key>
+      <PropertyRef Name="las_id" />
+    </Key>
+    <Property Type="Int32" Name="las_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="mac_address" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="computer_name" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="activation_key" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="date_activated" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="next_expiry_date" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="days_for_expiry" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TechParam">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="strtdt" />
+    <Property Type="Int32" Name="edc" />
+  </EntityType>
+  <EntityType Name="TransactionDef">
+    <Key>
+      <PropertyRef Name="TxnCode" />
+    </Key>
+    <Property Type="String" Name="TxnCode" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="DataEntry" Nullable="false" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="PayrollItem" Nullable="false" MaxLength="15" FixedLength="true" Unicode="true" />
+    <Property Type="Decimal" Name="DefaultAmount" Precision="10" Scale="4" />
+    <Property Type="Boolean" Name="Enabled" />
+    <Property Type="Boolean" Name="Recurrent" />
+    <Property Type="Boolean" Name="TrackYTD" />
+  </EntityType>
+  <EntityType Name="Transaction">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="PostDate" />
+    <Property Type="Decimal" Name="Amount" Precision="19" Scale="4" />
+    <Property Type="String" Name="DRCR" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Narrative" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="TxnType" />
+  </EntityType>
+  <EntityType Name="TxnType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UserProfile">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Type="Int32" Name="UserId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="UserName" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="webpages_Membership">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <Property Type="DateTime" Name="CreateDate" />
+    <Property Type="String" Name="ConfirmationToken" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsConfirmed" />
+    <Property Type="DateTime" Name="LastPasswordFailureDate" />
+    <Property Type="Int32" Name="PasswordFailuresSinceLastSuccess" Nullable="false" />
+    <Property Type="String" Name="Password" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="PasswordChangedDate" />
+    <Property Type="String" Name="PasswordSalt" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PasswordVerificationToken" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="PasswordVerificationTokenExpirationDate" />
+  </EntityType>
+  <EntityType Name="webpages_OAuthMembership">
+    <Key>
+      <PropertyRef Name="Provider" />
+      <PropertyRef Name="ProviderUserId" />
+    </Key>
+    <Property Type="String" Name="Provider" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ProviderUserId" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+  </EntityType>
+  <EntityType Name="webpages_Roles">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Type="Int32" Name="RoleId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="RoleName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="webpages_UsersInRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <Property Type="Int32" Name="RoleId" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GetEmpTransaction">
+    <Key>
+      <PropertyRef Name="ItemId" />
+      <PropertyRef Name="Amount" />
+      <PropertyRef Name="Recurrent" />
+      <PropertyRef Name="Enabled" />
+      <PropertyRef Name="EmpTxnId" />
+      <PropertyRef Name="EmployeeId" />
+      <PropertyRef Name="PostDate" />
+    </Key>
+    <Property Type="String" Name="Surname" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MaritalStatus" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsActive" />
+    <Property Type="String" Name="ItemId" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Amount" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Boolean" Name="Recurrent" Nullable="false" />
+    <Property Type="Boolean" Name="Enabled" Nullable="false" />
+    <Property Type="Decimal" Name="BasicPay" Precision="19" Scale="4" />
+    <Property Type="String" Name="Department" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DeptCode" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="EmpTrack" />
+    <Property Type="Decimal" Name="Balance" Precision="19" Scale="4" />
+    <Property Type="String" Name="ItemTypeId" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TaxTrackingId" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="Active" />
+    <Property Type="Boolean" Name="AddToPension" />
+    <Property Type="Boolean" Name="ShowYTDInPayslip" />
+    <Property Type="Int32" Name="EmpTxnId" Nullable="false" />
+    <Property Type="Boolean" Name="Processed" />
+    <Property Type="String" Name="Parent" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmpNo" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="EmployeeId" Nullable="false" />
+    <Property Type="String" Name="OtherNames" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DoB" />
+    <Property Type="String" Name="Gender" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Photo" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsDeleted" />
+    <Property Type="DateTime" Name="PostDate" Nullable="false" />
+    <Property Type="Boolean" Name="Enable" />
+    <Property Type="String" Name="SystemId" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsLoanRepaymentInFull" />
+    <Property Type="Int32" Name="LoanBeingRepayedId" />
+    <Property Type="Int32" Name="SaccoBeingRepayedId" />
+    <Property Type="Boolean" Name="IsLoanRepaymentInCash" />
+    <Property Type="Boolean" Name="IsSharesRepaymentInCash" />
+  </EntityType>
+  <EntityType Name="vwBankBranch">
+    <Key>
+      <PropertyRef Name="BankBranchName" />
+      <PropertyRef Name="BankSortCode" />
+      <PropertyRef Name="BankName" />
+      <PropertyRef Name="BankCode" />
+      <PropertyRef Name="BranchCode" />
+      <PropertyRef Name="BranchName" />
+      <PropertyRef Name="Expr1" />
+    </Key>
+    <Property Type="String" Name="BankBranchName" Nullable="false" MaxLength="303" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BankSortCode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BankName" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BankCode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BranchCode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BranchName" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Expr1" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="vwPayrollMaster">
+    <Key>
+      <PropertyRef Name="BankName" />
+      <PropertyRef Name="BranchName" />
+      <PropertyRef Name="BranchCode" />
+      <PropertyRef Name="BankSortCode" />
+      <PropertyRef Name="BankCode" />
+      <PropertyRef Name="Period" />
+      <PropertyRef Name="Year" />
+      <PropertyRef Name="PaymentDate" />
+      <PropertyRef Name="PrintedBy" />
+      <PropertyRef Name="PrintedOn" />
+      <PropertyRef Name="EmpName" />
+      <PropertyRef Name="PayeTax" />
+      <PropertyRef Name="BasicPay" />
+      <PropertyRef Name="Benefits" />
+      <PropertyRef Name="OtherDeductions" />
+      <PropertyRef Name="GrossTaxableEarnings" />
+      <PropertyRef Name="NetTaxableEarnings" />
+      <PropertyRef Name="GrossTax" />
+      <PropertyRef Name="EmployerNSSF" />
+      <PropertyRef Name="PensionEmployee" />
+      <PropertyRef Name="NSSF" />
+      <PropertyRef Name="NHIF" />
+      <PropertyRef Name="NetPay" />
+      <PropertyRef Name="Variables" />
+      <PropertyRef Name="MortgageRelief" />
+      <PropertyRef Name="PersonalRelief" />
+      <PropertyRef Name="PensionEmployer" />
+      <PropertyRef Name="InsuranceRelief" />
+      <PropertyRef Name="EmployeeId" />
+      <PropertyRef Name="EmployerId" />
+    </Key>
+    <Property Type="String" Name="BankName" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BranchName" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Surname" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="OtherNames" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BranchCode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BankSortCode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PaymentMode" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BankBranchSortCode" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BankAccount" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="IDNo" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BankCode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Period" Nullable="false" />
+    <Property Type="Int32" Name="Year" Nullable="false" />
+    <Property Type="DateTime" Name="PaymentDate" Nullable="false" />
+    <Property Type="String" Name="PrintedBy" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="PrintedOn" Nullable="false" />
+    <Property Type="String" Name="EmpName" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PayPoint" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PIN" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NHIFNo" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Department" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NSSFNo" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmpGroup" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmpPayroll" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CompName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CompAddr" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CompTel" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="PayeTax" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="BasicPay" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="Benefits" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="OtherDeductions" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="GrossTaxableEarnings" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="NetTaxableEarnings" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="GrossTax" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="EmployerNSSF" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="PensionEmployee" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="String" Name="BankBranch" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Account" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="NSSF" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="NHIF" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="NetPay" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="String" Name="EmpNo" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Variables" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="MortgageRelief" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="PersonalRelief" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="PensionEmployer" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="InsuranceRelief" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Int32" Name="EmployeeId" Nullable="false" />
+    <Property Type="Int32" Name="EmployerId" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vwPayrollMaster_Temp">
+    <Key>
+      <PropertyRef Name="Period" />
+      <PropertyRef Name="Year" />
+      <PropertyRef Name="PaymentDate" />
+      <PropertyRef Name="PrintedBy" />
+      <PropertyRef Name="PrintedOn" />
+      <PropertyRef Name="EmpName" />
+      <PropertyRef Name="PayeTax" />
+      <PropertyRef Name="BasicPay" />
+      <PropertyRef Name="Benefits" />
+      <PropertyRef Name="OtherDeductions" />
+      <PropertyRef Name="GrossTaxableEarnings" />
+      <PropertyRef Name="NetTaxableEarnings" />
+      <PropertyRef Name="GrossTax" />
+      <PropertyRef Name="EmployerNSSF" />
+      <PropertyRef Name="PensionEmployee" />
+      <PropertyRef Name="NSSF" />
+      <PropertyRef Name="NHIF" />
+      <PropertyRef Name="NetPay" />
+      <PropertyRef Name="Variables" />
+      <PropertyRef Name="MortgageRelief" />
+      <PropertyRef Name="PersonalRelief" />
+      <PropertyRef Name="PensionEmployer" />
+      <PropertyRef Name="InsuranceRelief" />
+      <PropertyRef Name="EmployeeId" />
+      <PropertyRef Name="EmployerId" />
+    </Key>
+    <Property Type="String" Name="BankName" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BranchName" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Surname" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="OtherNames" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BranchCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BankSortCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PaymentMode" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BankBranchSortCode" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BankAccount" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="IDNo" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BankCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Period" Nullable="false" />
+    <Property Type="Int32" Name="Year" Nullable="false" />
+    <Property Type="DateTime" Name="PaymentDate" Nullable="false" />
+    <Property Type="String" Name="PrintedBy" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="PrintedOn" Nullable="false" />
+    <Property Type="String" Name="EmpName" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PayPoint" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PIN" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NHIFNo" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Department" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NSSFNo" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmpGroup" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmpPayroll" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CompName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CompAddr" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CompTel" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="PayeTax" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="BasicPay" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="Benefits" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="OtherDeductions" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="GrossTaxableEarnings" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="NetTaxableEarnings" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="GrossTax" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="EmployerNSSF" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="PensionEmployee" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="String" Name="BankBranch" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Account" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="NSSF" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="NHIF" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="NetPay" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="String" Name="EmpNo" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Variables" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="MortgageRelief" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="PersonalRelief" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="PensionEmployer" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="InsuranceRelief" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Int32" Name="EmployeeId" Nullable="false" />
+    <Property Type="Int32" Name="EmployerId" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vwPayslipDet">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="ItemId" />
+      <PropertyRef Name="RepayAmount" />
+      <PropertyRef Name="Period" />
+      <PropertyRef Name="PostDate" />
+      <PropertyRef Name="Description" />
+      <PropertyRef Name="DEType" />
+      <PropertyRef Name="EmpTxnId" />
+      <PropertyRef Name="TaxTracking" />
+      <PropertyRef Name="IsStatutory" />
+      <PropertyRef Name="Amount" />
+      <PropertyRef Name="EmployeeId" />
+      <PropertyRef Name="EmployerId" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="EmpNo" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Surname" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="OtherNames" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ItemId" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Balance" Precision="19" Scale="4" />
+    <Property Type="Int32" Name="ReFField" />
+    <Property Type="Decimal" Name="RepayAmount" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Int32" Name="Period" Nullable="false" />
+    <Property Type="Int32" Name="Year" />
+    <Property Type="DateTime" Name="TxnDate" />
+    <Property Type="DateTime" Name="PostDate" Nullable="false" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="YTD" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="InitialAmount" Precision="19" Scale="4" />
+    <Property Type="String" Name="LoanType" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BankAccount" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BankCode" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PaymentMode" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ItemTypeId" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DEType" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="EmpTxnId" Nullable="false" />
+    <Property Type="String" Name="TaxTracking" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="ShowInPayslip" />
+    <Property Type="Boolean" Name="IsStatutory" Nullable="false" />
+    <Property Type="Decimal" Name="Amount" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="Parent" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="EmployeeId" Nullable="false" />
+    <Property Type="Boolean" Name="IsDeleted" />
+    <Property Type="Boolean" Name="IsActive" />
+    <Property Type="Int32" Name="EmployerId" Nullable="false" />
+    <Property Type="String" Name="SystemId" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="AccumulativePayment" Precision="19" Scale="4" />
+    <Property Type="Boolean" Name="IsLoanRepaymentInFull" />
+    <Property Type="Boolean" Name="IsSharesRepaymentInCash" />
+    <Property Type="Boolean" Name="IsLoanRepaymentInCash" />
+  </EntityType>
+  <EntityType Name="vwPayslipDet_Temp">
+    <Key>
+      <PropertyRef Name="EmployeeId" />
+      <PropertyRef Name="ItemId" />
+      <PropertyRef Name="RepayAmount" />
+      <PropertyRef Name="PostDate" />
+      <PropertyRef Name="EmpTxnId" />
+      <PropertyRef Name="Period" />
+      <PropertyRef Name="Description" />
+      <PropertyRef Name="TaxTracking" />
+      <PropertyRef Name="Amount" />
+      <PropertyRef Name="DEType" />
+      <PropertyRef Name="IsStatutory" />
+      <PropertyRef Name="EmployerId" />
+    </Key>
+    <Property Type="Int32" Name="EmployeeId" Nullable="false" />
+    <Property Type="String" Name="EmpNo" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Surname" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="OtherNames" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ItemId" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Balance" Precision="19" Scale="4" />
+    <Property Type="DateTime" Name="TxnDate" />
+    <Property Type="Int32" Name="ReFField" />
+    <Property Type="Decimal" Name="RepayAmount" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="DateTime" Name="PostDate" Nullable="false" />
+    <Property Type="Decimal" Name="InitialAmount" Precision="19" Scale="4" />
+    <Property Type="String" Name="LoanType" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BankAccount" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BankCode" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PaymentMode" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ItemTypeId" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Parent" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="EmpTxnId" Nullable="false" />
+    <Property Type="Int32" Name="Period" Nullable="false" />
+    <Property Type="Int32" Name="Year" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TaxTracking" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="Decimal" Name="Amount" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="DEType" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsStatutory" Nullable="false" />
+    <Property Type="Boolean" Name="ShowInPayslip" />
+    <Property Type="Decimal" Name="YTD" Precision="18" Scale="0" />
+    <Property Type="Boolean" Name="IsActive" />
+    <Property Type="Boolean" Name="IsDeleted" />
+    <Property Type="Int32" Name="EmployerId" Nullable="false" />
+    <Property Type="String" Name="SystemId" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="AccumulativePayment" Precision="19" Scale="4" />
+    <Property Type="Boolean" Name="IsLoanRepaymentInFull" />
+    <Property Type="Boolean" Name="IsSharesRepaymentInCash" />
+    <Property Type="Boolean" Name="IsLoanRepaymentInCash" />
+  </EntityType>
+  <Association Name="FK_BankBranch_Banks">
+    <End Type="SBPayrollDBEntitiesModel.Bank" Role="Bank" Multiplicity="1" />
+    <End Type="SBPayrollDBEntitiesModel.BankBranch" Role="BankBranch" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bank">
+        <PropertyRef Name="BankCode" />
+      </Principal>
+      <Dependent Role="BankBranch">
+        <PropertyRef Name="BankCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employees_Employers">
+    <End Type="SBPayrollDBEntitiesModel.Employer" Role="Employer" Multiplicity="1" />
+    <End Type="SBPayrollDBEntitiesModel.Employee" Role="Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="EmployerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PayrollItems_TaxTracking">
+    <End Type="SBPayrollDBEntitiesModel.TaxTracking" Role="TaxTracking" Multiplicity="0..1" />
+    <End Type="SBPayrollDBEntitiesModel.PayrollItem" Role="PayrollItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TaxTracking">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PayrollItem">
+        <PropertyRef Name="TaxTrackingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Settings_SettingsGroup">
+    <End Type="SBPayrollDBEntitiesModel.SettingsGroup" Role="SettingsGroup" Multiplicity="1" />
+    <End Type="SBPayrollDBEntitiesModel.Setting" Role="Setting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SettingsGroup">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Setting">
+        <PropertyRef Name="SGroup" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_spAllowedReportsRolesMenus_spReportsMenuItems">
+    <End Type="SBPayrollDBEntitiesModel.spReportsMenuItem" Role="spReportsMenuItem" Multiplicity="1" />
+    <End Type="SBPayrollDBEntitiesModel.spAllowedReportsRolesMenu" Role="spAllowedReportsRolesMenu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="spReportsMenuItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="spAllowedReportsRolesMenu">
+        <PropertyRef Name="MenuItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_spAllowedRoleMenus_spMenuItems">
+    <End Type="SBPayrollDBEntitiesModel.spMenuItem" Role="spMenuItem" Multiplicity="1" />
+    <End Type="SBPayrollDBEntitiesModel.spAllowedRoleMenu" Role="spAllowedRoleMenu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="spMenuItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="spAllowedRoleMenu">
+        <PropertyRef Name="MenuItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
