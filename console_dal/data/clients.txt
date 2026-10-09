@@ -1,0 +1,129 @@
+Miale Place,kimbo, kimbo
+Urban Oaks Residence,juja,juja
+imani miracle plaza,kimbo, kimbo
+venice court,kimbo, kimbo
+imani plaza,kimbo, kimbo
+gazebo 1,kimbo, kimbo
+georgina complex,kimbo, kimbo
+fahrenheit 100,kimbo, kimbo
+kinjo court,kimbo, kimbo
+anchor 2,kimbo, kimbo
+chui heights,kimbo, kimbo
+lilac apartments,kahawa west, kahawa west
+oak apartments,kahawa west, kahawa west
+sayari heights,kahawa west, kahawa west
+durmo arcade,kahawa west, kahawa west
+victory w house,juja,juja
+diplomat complex,juja,juja
+acapulco,toll,toll
+njembu towers,toll,toll
+briden apartments,toll,toll
+ergon plaza,toll,toll
+the edge,toll,toll
+key west,toll,toll
+imani place,toll,toll
+new view apartments,toll,toll
+peniel house,toll,toll
+dreamz paradise,toll,toll
+jiji towers,ruiru,ruiru
+njimwe,ruiru,ruiru
+crosspath,ruiru,ruiru
+sychar apartments,ruiru,ruiru
+gilgal heights,ruiru,ruiru
+samtha heights,ruiru,ruiru
+jalen heights,ruiru,ruiru
+serene apartments,kimbo,kimbo
+elshadai apartments,kimbo,kimbo
+galilee archade,kimbo,kimbo
+kim apartments,kimbo,kimbo
+pleasant view apartments,kimbo,kimbo
+zoari apartments,kimbo,kimbo
+peridot suites,kimbo,kimbo
+angle heights,kimbo,kimbo
+venice court,kimbo,kimbo
+dreamz paradise,kimbo,kimbo
+the village,kimbo,kimbo
+the hedge,by pass,by pass
+imani court,by pass,by pass
+pawanu place,by pass,by pass
+denver court,by pass,by pass
+vankel apartments,by pass,by pass
+lyonje apartments,by pass,by pass
+aim plaza,by pass,by pass
+mishale heights,by pass,by pass
+paradise plaza,by pass,by pass
+golden palace,by pass,by pass
+the rock archade,by pass,by pass
+jb place,roisambu,roisambu
+uncle sam premier,roisambu,roisambu
+suite,roisambu,roisambu
+lumac upperhill apartments,roisambu,roisambu
+the goshen garden,roisambu,roisambu
+blessed house,roisambu,roisambu
+muthaiga square,roisambu,roisambu
+pangani view,roisambu,roisambu
+zohra heights,roisambu,roisambu
+kensia house,roisambu,roisambu
+ricard flats, zimmerman,zimmerman
+rich twin towers, zimmerman,zimmerman
+dayton apartments, zimmerman,zimmerman
+jodam apartments, zimmerman,zimmerman
+l.t and t apartments, zimmerman,zimmerman
+riara river apartments, kahawa west, kahawa west
+asil place ,kahawa west, kahawa west
+denali place ,kahawa west, kahawa west,
+kiamumbi suites, kahawa west, kahawa west
+karma flats, kahawa west, kahawa west
+zen apartments, kahawa west, kahawa west
+silicon valley apartments, membley,membley
+imani apartments,membley,membley
+tiwa,membley,membley
+kawamu,membley,membley
+pine way residence,membley,membley
+elshadai apartments,membley,membley
+shalom haven,membley,membley
+sychamore,membley,membley
+wetways archade,membley,membley
+ebenezar 1, kahawa west, kahawa west
+ebenezar 2, kahawa west, kahawa west
+ebenezar 3, kahawa west, kahawa west
+ruby bypass apartments, zimmerman,zimmerman
+venus complex,zimmerman,zimmerman
+kaba thayu,zimmerman,zimmerman
+sweet waters,zimmerman,zimmerman
+antipas apartments,zimmerman,zimmerman
+valley view residence,zimmerman,zimmerman
+nyaguno plaza,,zimmerman,zimmerman
+mg plaza ,zimmerman,zimmerman
+joy heights,zimmerman,zimmerman
+christian heights,zimmerman,zimmerman
+aramani,zimmerman,zimmerman
+wldi apartments,zimmerman,zimmerman
+mukumi,zimmerman,zimmerman
+shelter pride apartments,zimmerman,zimmerman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

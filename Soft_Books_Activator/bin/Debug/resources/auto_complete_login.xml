@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<Systems>
-  <System system="Soft Books Sacco" serverName="KMK\SQLEXPRESS" databaseName="SBSaccoDB" userName="sa" password="D61GEfjyCSs7HfnVx6hIOQ==" IntegratedSecurity="True" remember="True" />
-  <System system="Soft Books Sacco" serverName="KMK\SQLEXPRESS" databaseName="SBSaccoDB" userName="sa" password="D61GEfjyCSs7HfnVx6hIOQ==" IntegratedSecurity="True" remember="True" />
-  <System system="Soft Books Sacco" serverName="KMK\SQLEXPRESS" databaseName="SBSaccoDB_april_2024" userName="sa" password="D61GEfjyCSs7HfnVx6hIOQ==" IntegratedSecurity="True" remember="True" />
-</Systems>

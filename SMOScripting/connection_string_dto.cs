@@ -1,0 +1,25 @@
+﻿/*
+ * Created by: "kevin mutugi, kevinmk30@gmail.com, +254717769329"
+ * Date: 04/24/2020
+ * Time: 10:27 PM
+ */
+using System;
+
+namespace SMOScripting
+{
+    /// <summary>
+    /// Description of connectionstringdto.
+    /// </summary>
+    public abstract class connection_string_dto
+    {
+        public string datasource { get; set; }
+        public string database { get; set; }
+        public string userid { get; set; }
+        public string password { get; set; }
+        public string port { get; set; }
+        public string new_database_name { get; set; }
+        public string update_schema_temp_db { get; set; }
+        public string update_schema_current_db { get; set; }
+    }
+
+}
